@@ -7,7 +7,7 @@ source "https://rails-assets.org" do
   gem 'rails-assets-c3'
   gem 'rails-assets-d3'
   gem 'rails-assets-summernote'
-  gem 'rails-assets-jquery'
+  gem 'rails-assets-jquery', '~>3'
   gem 'rails-assets-jquery.cookie'
   gem 'rails-assets-fastclick'
   gem 'rails-assets-jquery-mousewheel'
