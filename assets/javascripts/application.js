@@ -3,4 +3,4 @@
 //= require jquery.cookie
 //= require fastclick
 //= require bootstrap-sprockets
-//= require clearmin.min
+//= require clearmin
