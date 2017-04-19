@@ -1,0 +1,2403 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    link rel="stylesheet" type="text/css" href="assets/css/bootstrap-clearmin.min.css"
+    link rel="stylesheet" type="text/css" href="assets/css/roboto.css"
+    link rel="stylesheet" type="text/css" href="assets/css/material-design.css"
+    link rel="stylesheet" type="text/css" href="assets/css/small-n-flat.css"
+    link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"
+    title
+      | Clearmin template
+  body.cm-no-transition.cm-1-navbar
+    #cm-menu
+      nav.cm-navbar.cm-navbar-primary
+        .cm-flex
+          a.cm-logo href="index.html"
+        .btn.btn-primary.md-menu-white data-toggle="cm-menu"
+      #cm-menu-content
+        #cm-menu-items-wrapper
+          #cm-menu-scroller
+            ul.cm-menu-items
+              li
+                a.sf-house href="index.html"
+                  | Home
+              li
+                a.sf-dashboard href="dashboard-sales.html"
+                  | Dashboard
+              li
+                a.sf-brick href="components-text.html"
+                  | Components
+              li.cm-submenu
+                a.sf-window-layout
+                  | Navbar layouts 
+                  span.caret
+                ul
+                  li
+                    a href="layouts-breadcrumb1.html"
+                      | 1st nav breadcrumb
+                  li
+                    a href="layouts-breadcrumb2.html"
+                      | 2nd nav breadcrumb
+                  li
+                    a href="layouts-tabs.html"
+                      | 2nd nav tabs
+              li.cm-submenu.pre-open
+                a.sf-cat
+                  | Icons 
+                  span.caret
+                ul
+                  li
+                    a href="ico-sf.html"
+                      | Small-n-flat
+                  li.active
+                    a href="ico-md.html"
+                      | Material Design
+                  li
+                    a href="ico-fa.html"
+                      | Font Awesome
+              li
+                a.sf-notepad href="notepad.html"
+                  | Text Editor
+              li
+                a.sf-lock-open href="login.html"
+                  | Login page
+    header#cm-header
+      nav.cm-navbar.cm-navbar-primary
+        .btn.btn-primary.md-menu-white.hidden-md.hidden-lg data-toggle="cm-menu"
+        .cm-flex
+          h1
+            | Material Design Icons
+          form#cm-search action="index.html" method="get"
+            input type="search" name="q" autocomplete="off" placeholder="Search..."
+        .pull-right
+          #cm-search-btn.btn.btn-primary.md-search-white data-toggle="cm-search"
+        .dropdown.pull-right
+          button.btn.btn-primary.md-notifications-white data-toggle="dropdown"
+            span.label.label-danger
+              | 23
+          .popover.cm-popover.bottom
+            .arrow
+            .popover-content
+              .list-group
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading.text-overflow
+                  i.fa.fa-fw.fa-envelope
+                  |  Nunc volutpat aliquet magna. 
+                p.list-group-item-text.text-overflow
+                  | Pellentesque tincidunt mollis scelerisque. Praesent vel blandit quam.
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-envelope
+                  |  Aliquam orci lectus 
+                p.list-group-item-text
+                  | Donec quis arcu non risus sagittis
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-warning
+                  |  Holy guacamole ! 
+                p.list-group-item-text
+                  | Best check yo self, you're not looking too good.
+              div style="padding:10px"
+                a.btn.btn-success.btn-block href="#"
+                  | Show me more...
+        .dropdown.pull-right
+          button.btn.btn-primary.md-account-circle-white data-toggle="dropdown"
+          ul.dropdown-menu
+            li.disabled.text-center
+              a style="cursor:default;"
+                strong
+                  | John Smith
+            li.divider
+            li
+              a href="#"
+                i.fa.fa-fw.fa-user
+                |  Profile
+            li
+              a href="#"
+                i.fa.fa-fw.fa-cog
+                |  Settings
+            li
+              a href="login.html"
+                i.fa.fa-fw.fa-sign-out
+                |  Sign out
+    #global
+      style
+        |  .demo-icons .col-lg-2{ padding:10px; border:1px solid transparent; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; border-radius:2px; } .col-lg-2:hover{background:#f5f5f5;border-color:#eee;} 
+      .container-fluid
+        .panel.panel-default.demo-icons
+          .panel-heading
+            | SVG ICONS CLASSES 
+            span.badge.pull-right
+              | 747 icons
+          .panel-body
+            .alert.alert-info role="alert" style="margin-bottom:0"
+              i.fa.fa-fw.fa-lightbulb-o
+              |  Append 
+              em
+                | -white
+              |  to the class name to display the white version. 
+            hr
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/3d-rotation.svg" height="24" width="24"
+              |    md-3d-rotation 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/access-alarm.svg" height="24" width="24"
+              |    md-access-alarm 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/access-alarms.svg" height="24" width="24"
+              |    md-access-alarms 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/access-time.svg" height="24" width="24"
+              |    md-access-time 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/accessibility.svg" height="24" width="24"
+              |    md-accessibility 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/account-balance-wallet.svg" height="24" width="24"
+              |    md-account-balance-wallet 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/account-balance.svg" height="24" width="24"
+              |    md-account-balance 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/account-box.svg" height="24" width="24"
+              |    md-account-box 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/account-child.svg" height="24" width="24"
+              |    md-account-child 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/account-circle.svg" height="24" width="24"
+              |    md-account-circle 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/adb.svg" height="24" width="24"
+              |    md-adb 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/add-alarm.svg" height="24" width="24"
+              |    md-add-alarm 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/add-box.svg" height="24" width="24"
+              |    md-add-box 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/add-circle-outline.svg" height="24" width="24"
+              |    md-add-circle-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/add-circle.svg" height="24" width="24"
+              |    md-add-circle 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/add-shopping-cart.svg" height="24" width="24"
+              |    md-add-shopping-cart 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/add-to-photos.svg" height="24" width="24"
+              |    md-add-to-photos 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/add.svg" height="24" width="24"
+              |    md-add 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/adjust.svg" height="24" width="24"
+              |    md-adjust 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/airplanemode-off.svg" height="24" width="24"
+              |    md-airplanemode-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/airplanemode-on.svg" height="24" width="24"
+              |    md-airplanemode-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/alarm-add.svg" height="24" width="24"
+              |    md-alarm-add 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/alarm-off.svg" height="24" width="24"
+              |    md-alarm-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/alarm-on.svg" height="24" width="24"
+              |    md-alarm-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/alarm.svg" height="24" width="24"
+              |    md-alarm 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/album.svg" height="24" width="24"
+              |    md-album 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/android.svg" height="24" width="24"
+              |    md-android 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/announcement.svg" height="24" width="24"
+              |    md-announcement 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/apps.svg" height="24" width="24"
+              |    md-apps 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/archive.svg" height="24" width="24"
+              |    md-archive 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/arrow-back.svg" height="24" width="24"
+              |    md-arrow-back 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/arrow-drop-down-circle.svg" height="24" width="24"
+              |    md-arrow-drop-down-circle 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/arrow-drop-down.svg" height="24" width="24"
+              |    md-arrow-drop-down 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/arrow-drop-up.svg" height="24" width="24"
+              |    md-arrow-drop-up 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/arrow-forward.svg" height="24" width="24"
+              |    md-arrow-forward 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/aspect-ratio.svg" height="24" width="24"
+              |    md-aspect-ratio 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/assessment.svg" height="24" width="24"
+              |    md-assessment 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/assignment-ind.svg" height="24" width="24"
+              |    md-assignment-ind 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/assignment-late.svg" height="24" width="24"
+              |    md-assignment-late 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/assignment-return.svg" height="24" width="24"
+              |    md-assignment-return 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/assignment-returned.svg" height="24" width="24"
+              |    md-assignment-returned 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/assignment-turned-in.svg" height="24" width="24"
+              |    md-assignment-turned-in 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/assignment.svg" height="24" width="24"
+              |    md-assignment 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/assistant-photo.svg" height="24" width="24"
+              |    md-assistant-photo 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/attach-file.svg" height="24" width="24"
+              |    md-attach-file 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/attach-money.svg" height="24" width="24"
+              |    md-attach-money 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/attachment.svg" height="24" width="24"
+              |    md-attachment 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/audiotrack.svg" height="24" width="24"
+              |    md-audiotrack 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/autorenew.svg" height="24" width="24"
+              |    md-autorenew 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/av-timer.svg" height="24" width="24"
+              |    md-av-timer 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/backspace.svg" height="24" width="24"
+              |    md-backspace 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/backup.svg" height="24" width="24"
+              |    md-backup 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-20.svg" height="24" width="24"
+              |    md-battery-20 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-30.svg" height="24" width="24"
+              |    md-battery-30 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-50.svg" height="24" width="24"
+              |    md-battery-50 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-60.svg" height="24" width="24"
+              |    md-battery-60 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-80.svg" height="24" width="24"
+              |    md-battery-80 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-90.svg" height="24" width="24"
+              |    md-battery-90 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-alert.svg" height="24" width="24"
+              |    md-battery-alert 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-charging-20.svg" height="24" width="24"
+              |    md-battery-charging-20 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-charging-30.svg" height="24" width="24"
+              |    md-battery-charging-30 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-charging-50.svg" height="24" width="24"
+              |    md-battery-charging-50 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-charging-60.svg" height="24" width="24"
+              |    md-battery-charging-60 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-charging-80.svg" height="24" width="24"
+              |    md-battery-charging-80 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-charging-90.svg" height="24" width="24"
+              |    md-battery-charging-90 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-charging-full.svg" height="24" width="24"
+              |    md-battery-charging-full 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-full.svg" height="24" width="24"
+              |    md-battery-full 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-std.svg" height="24" width="24"
+              |    md-battery-std 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/battery-unknown.svg" height="24" width="24"
+              |    md-battery-unknown 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/beenhere.svg" height="24" width="24"
+              |    md-beenhere 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/block.svg" height="24" width="24"
+              |    md-block 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/bluetooth-audio.svg" height="24" width="24"
+              |    md-bluetooth-audio 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/bluetooth-connected.svg" height="24" width="24"
+              |    md-bluetooth-connected 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/bluetooth-disabled.svg" height="24" width="24"
+              |    md-bluetooth-disabled 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/bluetooth-searching.svg" height="24" width="24"
+              |    md-bluetooth-searching 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/bluetooth.svg" height="24" width="24"
+              |    md-bluetooth 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/blur-circular.svg" height="24" width="24"
+              |    md-blur-circular 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/blur-linear.svg" height="24" width="24"
+              |    md-blur-linear 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/blur-off.svg" height="24" width="24"
+              |    md-blur-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/blur-on.svg" height="24" width="24"
+              |    md-blur-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/book.svg" height="24" width="24"
+              |    md-book 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/bookmark-outline.svg" height="24" width="24"
+              |    md-bookmark-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/bookmark.svg" height="24" width="24"
+              |    md-bookmark 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-all.svg" height="24" width="24"
+              |    md-border-all 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-bottom.svg" height="24" width="24"
+              |    md-border-bottom 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-clear.svg" height="24" width="24"
+              |    md-border-clear 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-color.svg" height="24" width="24"
+              |    md-border-color 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-horizontal.svg" height="24" width="24"
+              |    md-border-horizontal 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-inner.svg" height="24" width="24"
+              |    md-border-inner 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-left.svg" height="24" width="24"
+              |    md-border-left 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-outer.svg" height="24" width="24"
+              |    md-border-outer 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-right.svg" height="24" width="24"
+              |    md-border-right 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-style.svg" height="24" width="24"
+              |    md-border-style 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-top.svg" height="24" width="24"
+              |    md-border-top 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/border-vertical.svg" height="24" width="24"
+              |    md-border-vertical 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-1.svg" height="24" width="24"
+              |    md-brightness-1 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-2.svg" height="24" width="24"
+              |    md-brightness-2 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-3.svg" height="24" width="24"
+              |    md-brightness-3 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-4.svg" height="24" width="24"
+              |    md-brightness-4 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-5.svg" height="24" width="24"
+              |    md-brightness-5 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-6.svg" height="24" width="24"
+              |    md-brightness-6 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-7.svg" height="24" width="24"
+              |    md-brightness-7 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-auto.svg" height="24" width="24"
+              |    md-brightness-auto 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-high.svg" height="24" width="24"
+              |    md-brightness-high 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-low.svg" height="24" width="24"
+              |    md-brightness-low 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brightness-medium.svg" height="24" width="24"
+              |    md-brightness-medium 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/brush.svg" height="24" width="24"
+              |    md-brush 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/bug-report.svg" height="24" width="24"
+              |    md-bug-report 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/business.svg" height="24" width="24"
+              |    md-business 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cached.svg" height="24" width="24"
+              |    md-cached 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cake.svg" height="24" width="24"
+              |    md-cake 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/call-end.svg" height="24" width="24"
+              |    md-call-end 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/call-made.svg" height="24" width="24"
+              |    md-call-made 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/call-merge.svg" height="24" width="24"
+              |    md-call-merge 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/call-missed.svg" height="24" width="24"
+              |    md-call-missed 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/call-received.svg" height="24" width="24"
+              |    md-call-received 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/call-split.svg" height="24" width="24"
+              |    md-call-split 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/call.svg" height="24" width="24"
+              |    md-call 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/camera-alt.svg" height="24" width="24"
+              |    md-camera-alt 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/camera-front.svg" height="24" width="24"
+              |    md-camera-front 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/camera-rear.svg" height="24" width="24"
+              |    md-camera-rear 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/camera-roll.svg" height="24" width="24"
+              |    md-camera-roll 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/camera.svg" height="24" width="24"
+              |    md-camera 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cancel.svg" height="24" width="24"
+              |    md-cancel 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cast-connected.svg" height="24" width="24"
+              |    md-cast-connected 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cast.svg" height="24" width="24"
+              |    md-cast 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/center-focus-strong.svg" height="24" width="24"
+              |    md-center-focus-strong 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/center-focus-weak.svg" height="24" width="24"
+              |    md-center-focus-weak 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/chat.svg" height="24" width="24"
+              |    md-chat 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/check-box-outline-blank.svg" height="24" width="24"
+              |    md-check-box-outline-blank 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/check-box.svg" height="24" width="24"
+              |    md-check-box 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/check-circle.svg" height="24" width="24"
+              |    md-check-circle 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/check.svg" height="24" width="24"
+              |    md-check 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/chevron-left.svg" height="24" width="24"
+              |    md-chevron-left 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/chevron-right.svg" height="24" width="24"
+              |    md-chevron-right 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/class.svg" height="24" width="24"
+              |    md-class 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/clear-all.svg" height="24" width="24"
+              |    md-clear-all 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/clear.svg" height="24" width="24"
+              |    md-clear 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/close.svg" height="24" width="24"
+              |    md-close 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/closed-caption.svg" height="24" width="24"
+              |    md-closed-caption 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cloud-circle.svg" height="24" width="24"
+              |    md-cloud-circle 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cloud-done.svg" height="24" width="24"
+              |    md-cloud-done 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cloud-download.svg" height="24" width="24"
+              |    md-cloud-download 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cloud-off.svg" height="24" width="24"
+              |    md-cloud-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cloud-queue.svg" height="24" width="24"
+              |    md-cloud-queue 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cloud-upload.svg" height="24" width="24"
+              |    md-cloud-upload 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/cloud.svg" height="24" width="24"
+              |    md-cloud 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/collections.svg" height="24" width="24"
+              |    md-collections 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/color-lens.svg" height="24" width="24"
+              |    md-color-lens 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/colorize.svg" height="24" width="24"
+              |    md-colorize 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/comment.svg" height="24" width="24"
+              |    md-comment 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/compare.svg" height="24" width="24"
+              |    md-compare 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/computer.svg" height="24" width="24"
+              |    md-computer 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/contacts.svg" height="24" width="24"
+              |    md-contacts 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/content-copy.svg" height="24" width="24"
+              |    md-content-copy 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/content-cut.svg" height="24" width="24"
+              |    md-content-cut 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/content-paste.svg" height="24" width="24"
+              |    md-content-paste 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/control-point-duplicate.svg" height="24" width="24"
+              |    md-control-point-duplicate 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/control-point.svg" height="24" width="24"
+              |    md-control-point 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/create.svg" height="24" width="24"
+              |    md-create 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/credit-card.svg" height="24" width="24"
+              |    md-credit-card 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop-16-9.svg" height="24" width="24"
+              |    md-crop-16-9 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop-3-2.svg" height="24" width="24"
+              |    md-crop-3-2 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop-5-4.svg" height="24" width="24"
+              |    md-crop-5-4 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop-7-5.svg" height="24" width="24"
+              |    md-crop-7-5 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop-din.svg" height="24" width="24"
+              |    md-crop-din 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop-free.svg" height="24" width="24"
+              |    md-crop-free 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop-landscape.svg" height="24" width="24"
+              |    md-crop-landscape 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop-original.svg" height="24" width="24"
+              |    md-crop-original 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop-portrait.svg" height="24" width="24"
+              |    md-crop-portrait 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop-square.svg" height="24" width="24"
+              |    md-crop-square 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/crop.svg" height="24" width="24"
+              |    md-crop 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/dashboard.svg" height="24" width="24"
+              |    md-dashboard 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/data-usage.svg" height="24" width="24"
+              |    md-data-usage 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/dehaze.svg" height="24" width="24"
+              |    md-dehaze 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/delete.svg" height="24" width="24"
+              |    md-delete 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/description.svg" height="24" width="24"
+              |    md-description 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/desktop-mac.svg" height="24" width="24"
+              |    md-desktop-mac 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/desktop-windows.svg" height="24" width="24"
+              |    md-desktop-windows 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/details.svg" height="24" width="24"
+              |    md-details 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/developer-mode.svg" height="24" width="24"
+              |    md-developer-mode 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/devices.svg" height="24" width="24"
+              |    md-devices 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/dialer-sip.svg" height="24" width="24"
+              |    md-dialer-sip 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/dialpad.svg" height="24" width="24"
+              |    md-dialpad 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/directions-bike.svg" height="24" width="24"
+              |    md-directions-bike 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/directions-bus.svg" height="24" width="24"
+              |    md-directions-bus 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/directions-car.svg" height="24" width="24"
+              |    md-directions-car 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/directions-ferry.svg" height="24" width="24"
+              |    md-directions-ferry 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/directions-subway.svg" height="24" width="24"
+              |    md-directions-subway 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/directions-train.svg" height="24" width="24"
+              |    md-directions-train 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/directions-transit.svg" height="24" width="24"
+              |    md-directions-transit 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/directions-walk.svg" height="24" width="24"
+              |    md-directions-walk 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/directions.svg" height="24" width="24"
+              |    md-directions 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/disc-full.svg" height="24" width="24"
+              |    md-disc-full 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/dnd-forwardslash.svg" height="24" width="24"
+              |    md-dnd-forwardslash 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/dnd-on.svg" height="24" width="24"
+              |    md-dnd-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/dns.svg" height="24" width="24"
+              |    md-dns 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/do-not-disturb.svg" height="24" width="24"
+              |    md-do-not-disturb 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/dock.svg" height="24" width="24"
+              |    md-dock 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/domain.svg" height="24" width="24"
+              |    md-domain 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/done-all.svg" height="24" width="24"
+              |    md-done-all 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/done.svg" height="24" width="24"
+              |    md-done 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/drafts.svg" height="24" width="24"
+              |    md-drafts 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/drive-eta.svg" height="24" width="24"
+              |    md-drive-eta 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/dvr.svg" height="24" width="24"
+              |    md-dvr 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/edit.svg" height="24" width="24"
+              |    md-edit 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/email.svg" height="24" width="24"
+              |    md-email 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/equalizer.svg" height="24" width="24"
+              |    md-equalizer 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/error.svg" height="24" width="24"
+              |    md-error 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/event-available.svg" height="24" width="24"
+              |    md-event-available 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/event-busy.svg" height="24" width="24"
+              |    md-event-busy 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/event-note.svg" height="24" width="24"
+              |    md-event-note 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/event.svg" height="24" width="24"
+              |    md-event 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/exit-to-app.svg" height="24" width="24"
+              |    md-exit-to-app 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/expand-less.svg" height="24" width="24"
+              |    md-expand-less 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/expand-more.svg" height="24" width="24"
+              |    md-expand-more 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/explicit.svg" height="24" width="24"
+              |    md-explicit 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/explore.svg" height="24" width="24"
+              |    md-explore 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/exposure-minus-1.svg" height="24" width="24"
+              |    md-exposure-minus-1 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/exposure-minus-2.svg" height="24" width="24"
+              |    md-exposure-minus-2 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/exposure-plus-1.svg" height="24" width="24"
+              |    md-exposure-plus-1 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/exposure-plus-2.svg" height="24" width="24"
+              |    md-exposure-plus-2 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/exposure-zero.svg" height="24" width="24"
+              |    md-exposure-zero 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/exposure.svg" height="24" width="24"
+              |    md-exposure 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/extension.svg" height="24" width="24"
+              |    md-extension 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/face.svg" height="24" width="24"
+              |    md-face 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/fast-forward.svg" height="24" width="24"
+              |    md-fast-forward 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/fast-rewind.svg" height="24" width="24"
+              |    md-fast-rewind 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/favorite-outline.svg" height="24" width="24"
+              |    md-favorite-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/favorite.svg" height="24" width="24"
+              |    md-favorite 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/file-download.svg" height="24" width="24"
+              |    md-file-download 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/file-upload.svg" height="24" width="24"
+              |    md-file-upload 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-1.svg" height="24" width="24"
+              |    md-filter-1 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-2.svg" height="24" width="24"
+              |    md-filter-2 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-3.svg" height="24" width="24"
+              |    md-filter-3 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-4.svg" height="24" width="24"
+              |    md-filter-4 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-5.svg" height="24" width="24"
+              |    md-filter-5 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-6.svg" height="24" width="24"
+              |    md-filter-6 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-7.svg" height="24" width="24"
+              |    md-filter-7 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-8.svg" height="24" width="24"
+              |    md-filter-8 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-9-plus.svg" height="24" width="24"
+              |    md-filter-9-plus 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-9.svg" height="24" width="24"
+              |    md-filter-9 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-b-and-w.svg" height="24" width="24"
+              |    md-filter-b-and-w 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-center-focus.svg" height="24" width="24"
+              |    md-filter-center-focus 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-drama.svg" height="24" width="24"
+              |    md-filter-drama 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-frames.svg" height="24" width="24"
+              |    md-filter-frames 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-hdr.svg" height="24" width="24"
+              |    md-filter-hdr 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-list.svg" height="24" width="24"
+              |    md-filter-list 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-none.svg" height="24" width="24"
+              |    md-filter-none 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-tilt-shift.svg" height="24" width="24"
+              |    md-filter-tilt-shift 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter-vintage.svg" height="24" width="24"
+              |    md-filter-vintage 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/filter.svg" height="24" width="24"
+              |    md-filter 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/find-in-page.svg" height="24" width="24"
+              |    md-find-in-page 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/find-replace.svg" height="24" width="24"
+              |    md-find-replace 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/flag.svg" height="24" width="24"
+              |    md-flag 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/flare.svg" height="24" width="24"
+              |    md-flare 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/flash-auto.svg" height="24" width="24"
+              |    md-flash-auto 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/flash-off.svg" height="24" width="24"
+              |    md-flash-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/flash-on.svg" height="24" width="24"
+              |    md-flash-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/flight.svg" height="24" width="24"
+              |    md-flight 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/flip-to-back.svg" height="24" width="24"
+              |    md-flip-to-back 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/flip-to-front.svg" height="24" width="24"
+              |    md-flip-to-front 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/flip.svg" height="24" width="24"
+              |    md-flip 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/folder-open.svg" height="24" width="24"
+              |    md-folder-open 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/folder-shared.svg" height="24" width="24"
+              |    md-folder-shared 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/folder-special.svg" height="24" width="24"
+              |    md-folder-special 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/folder.svg" height="24" width="24"
+              |    md-folder 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-align-center.svg" height="24" width="24"
+              |    md-format-align-center 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-align-justify.svg" height="24" width="24"
+              |    md-format-align-justify 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-align-left.svg" height="24" width="24"
+              |    md-format-align-left 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-align-right.svg" height="24" width="24"
+              |    md-format-align-right 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-bold.svg" height="24" width="24"
+              |    md-format-bold 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-clear.svg" height="24" width="24"
+              |    md-format-clear 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-color-fill.svg" height="24" width="24"
+              |    md-format-color-fill 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-color-reset.svg" height="24" width="24"
+              |    md-format-color-reset 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-color-text.svg" height="24" width="24"
+              |    md-format-color-text 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-indent-decrease.svg" height="24" width="24"
+              |    md-format-indent-decrease 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-indent-increase.svg" height="24" width="24"
+              |    md-format-indent-increase 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-italic.svg" height="24" width="24"
+              |    md-format-italic 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-line-spacing.svg" height="24" width="24"
+              |    md-format-line-spacing 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-list-bulleted.svg" height="24" width="24"
+              |    md-format-list-bulleted 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-list-numbered.svg" height="24" width="24"
+              |    md-format-list-numbered 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-paint.svg" height="24" width="24"
+              |    md-format-paint 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-quote.svg" height="24" width="24"
+              |    md-format-quote 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-size.svg" height="24" width="24"
+              |    md-format-size 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-strikethrough.svg" height="24" width="24"
+              |    md-format-strikethrough 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-textdirection-l-to-r.svg" height="24" width="24"
+              |    md-format-textdirection-l-to-r 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-textdirection-r-to-l.svg" height="24" width="24"
+              |    md-format-textdirection-r-to-l 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/format-underline.svg" height="24" width="24"
+              |    md-format-underline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/forum.svg" height="24" width="24"
+              |    md-forum 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/forward.svg" height="24" width="24"
+              |    md-forward 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/fullscreen-exit.svg" height="24" width="24"
+              |    md-fullscreen-exit 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/fullscreen.svg" height="24" width="24"
+              |    md-fullscreen 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/functions.svg" height="24" width="24"
+              |    md-functions 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/gamepad.svg" height="24" width="24"
+              |    md-gamepad 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/games.svg" height="24" width="24"
+              |    md-games 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/gesture.svg" height="24" width="24"
+              |    md-gesture 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/get-app.svg" height="24" width="24"
+              |    md-get-app 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/gps-fixed.svg" height="24" width="24"
+              |    md-gps-fixed 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/gps-not-fixed.svg" height="24" width="24"
+              |    md-gps-not-fixed 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/gps-off.svg" height="24" width="24"
+              |    md-gps-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/grade.svg" height="24" width="24"
+              |    md-grade 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/gradient.svg" height="24" width="24"
+              |    md-gradient 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/grain.svg" height="24" width="24"
+              |    md-grain 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/grid-off.svg" height="24" width="24"
+              |    md-grid-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/grid-on.svg" height="24" width="24"
+              |    md-grid-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/group-add.svg" height="24" width="24"
+              |    md-group-add 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/group-work.svg" height="24" width="24"
+              |    md-group-work 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/group.svg" height="24" width="24"
+              |    md-group 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/hdr-off.svg" height="24" width="24"
+              |    md-hdr-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/hdr-on.svg" height="24" width="24"
+              |    md-hdr-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/hdr-strong.svg" height="24" width="24"
+              |    md-hdr-strong 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/hdr-weak.svg" height="24" width="24"
+              |    md-hdr-weak 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/headset-mic.svg" height="24" width="24"
+              |    md-headset-mic 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/headset.svg" height="24" width="24"
+              |    md-headset 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/healing.svg" height="24" width="24"
+              |    md-healing 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/hearing.svg" height="24" width="24"
+              |    md-hearing 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/help.svg" height="24" width="24"
+              |    md-help 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/high-quality.svg" height="24" width="24"
+              |    md-high-quality 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/highlight-remove.svg" height="24" width="24"
+              |    md-highlight-remove 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/history.svg" height="24" width="24"
+              |    md-history 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/home.svg" height="24" width="24"
+              |    md-home 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/hotel.svg" height="24" width="24"
+              |    md-hotel 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/https.svg" height="24" width="24"
+              |    md-https 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/image-aspect-ratio.svg" height="24" width="24"
+              |    md-image-aspect-ratio 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/image.svg" height="24" width="24"
+              |    md-image 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/import-export.svg" height="24" width="24"
+              |    md-import-export 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/inbox.svg" height="24" width="24"
+              |    md-inbox 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/info-outline.svg" height="24" width="24"
+              |    md-info-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/info.svg" height="24" width="24"
+              |    md-info 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/input.svg" height="24" width="24"
+              |    md-input 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/insert-chart.svg" height="24" width="24"
+              |    md-insert-chart 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/insert-comment.svg" height="24" width="24"
+              |    md-insert-comment 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/insert-drive-file.svg" height="24" width="24"
+              |    md-insert-drive-file 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/insert-emoticon.svg" height="24" width="24"
+              |    md-insert-emoticon 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/insert-invitation.svg" height="24" width="24"
+              |    md-insert-invitation 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/insert-link.svg" height="24" width="24"
+              |    md-insert-link 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/insert-photo.svg" height="24" width="24"
+              |    md-insert-photo 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/invert-colors-off.svg" height="24" width="24"
+              |    md-invert-colors-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/invert-colors-on.svg" height="24" width="24"
+              |    md-invert-colors-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/invert-colors.svg" height="24" width="24"
+              |    md-invert-colors 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/iso.svg" height="24" width="24"
+              |    md-iso 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-alt.svg" height="24" width="24"
+              |    md-keyboard-alt 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-arrow-down.svg" height="24" width="24"
+              |    md-keyboard-arrow-down 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-arrow-left.svg" height="24" width="24"
+              |    md-keyboard-arrow-left 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-arrow-right.svg" height="24" width="24"
+              |    md-keyboard-arrow-right 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-arrow-up.svg" height="24" width="24"
+              |    md-keyboard-arrow-up 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-backspace.svg" height="24" width="24"
+              |    md-keyboard-backspace 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-capslock.svg" height="24" width="24"
+              |    md-keyboard-capslock 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-control.svg" height="24" width="24"
+              |    md-keyboard-control 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-hide.svg" height="24" width="24"
+              |    md-keyboard-hide 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-return.svg" height="24" width="24"
+              |    md-keyboard-return 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-tab.svg" height="24" width="24"
+              |    md-keyboard-tab 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard-voice.svg" height="24" width="24"
+              |    md-keyboard-voice 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/keyboard.svg" height="24" width="24"
+              |    md-keyboard 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/label-outline.svg" height="24" width="24"
+              |    md-label-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/label.svg" height="24" width="24"
+              |    md-label 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/landscape.svg" height="24" width="24"
+              |    md-landscape 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/language.svg" height="24" width="24"
+              |    md-language 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/laptop-chromebook.svg" height="24" width="24"
+              |    md-laptop-chromebook 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/laptop-mac.svg" height="24" width="24"
+              |    md-laptop-mac 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/laptop-windows.svg" height="24" width="24"
+              |    md-laptop-windows 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/laptop.svg" height="24" width="24"
+              |    md-laptop 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/launch.svg" height="24" width="24"
+              |    md-launch 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/layers-clear.svg" height="24" width="24"
+              |    md-layers-clear 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/layers.svg" height="24" width="24"
+              |    md-layers 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/leak-add.svg" height="24" width="24"
+              |    md-leak-add 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/leak-remove.svg" height="24" width="24"
+              |    md-leak-remove 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/lens.svg" height="24" width="24"
+              |    md-lens 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/link.svg" height="24" width="24"
+              |    md-link 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/list.svg" height="24" width="24"
+              |    md-list 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/live-help.svg" height="24" width="24"
+              |    md-live-help 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-airport.svg" height="24" width="24"
+              |    md-local-airport 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-atm.svg" height="24" width="24"
+              |    md-local-atm 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-attraction.svg" height="24" width="24"
+              |    md-local-attraction 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-bar.svg" height="24" width="24"
+              |    md-local-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-cafe.svg" height="24" width="24"
+              |    md-local-cafe 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-car-wash.svg" height="24" width="24"
+              |    md-local-car-wash 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-convenience-store.svg" height="24" width="24"
+              |    md-local-convenience-store 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-drink.svg" height="24" width="24"
+              |    md-local-drink 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-florist.svg" height="24" width="24"
+              |    md-local-florist 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-gas-station.svg" height="24" width="24"
+              |    md-local-gas-station 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-grocery-store.svg" height="24" width="24"
+              |    md-local-grocery-store 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-hospital.svg" height="24" width="24"
+              |    md-local-hospital 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-hotel.svg" height="24" width="24"
+              |    md-local-hotel 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-laundry-service.svg" height="24" width="24"
+              |    md-local-laundry-service 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-library.svg" height="24" width="24"
+              |    md-local-library 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-mall.svg" height="24" width="24"
+              |    md-local-mall 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-movies.svg" height="24" width="24"
+              |    md-local-movies 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-offer.svg" height="24" width="24"
+              |    md-local-offer 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-parking.svg" height="24" width="24"
+              |    md-local-parking 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-pharmacy.svg" height="24" width="24"
+              |    md-local-pharmacy 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-phone.svg" height="24" width="24"
+              |    md-local-phone 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-pizza.svg" height="24" width="24"
+              |    md-local-pizza 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-play.svg" height="24" width="24"
+              |    md-local-play 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-post-office.svg" height="24" width="24"
+              |    md-local-post-office 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-print-shop.svg" height="24" width="24"
+              |    md-local-print-shop 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-restaurant.svg" height="24" width="24"
+              |    md-local-restaurant 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-see.svg" height="24" width="24"
+              |    md-local-see 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-shipping.svg" height="24" width="24"
+              |    md-local-shipping 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/local-taxi.svg" height="24" width="24"
+              |    md-local-taxi 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/location-city.svg" height="24" width="24"
+              |    md-location-city 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/location-disabled.svg" height="24" width="24"
+              |    md-location-disabled 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/location-history.svg" height="24" width="24"
+              |    md-location-history 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/location-off.svg" height="24" width="24"
+              |    md-location-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/location-on.svg" height="24" width="24"
+              |    md-location-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/location-searching.svg" height="24" width="24"
+              |    md-location-searching 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/lock-open.svg" height="24" width="24"
+              |    md-lock-open 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/lock-outline.svg" height="24" width="24"
+              |    md-lock-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/lock.svg" height="24" width="24"
+              |    md-lock 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/looks-3.svg" height="24" width="24"
+              |    md-looks-3 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/looks-4.svg" height="24" width="24"
+              |    md-looks-4 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/looks-5.svg" height="24" width="24"
+              |    md-looks-5 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/looks-6.svg" height="24" width="24"
+              |    md-looks-6 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/looks-one.svg" height="24" width="24"
+              |    md-looks-one 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/looks-two.svg" height="24" width="24"
+              |    md-looks-two 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/looks.svg" height="24" width="24"
+              |    md-looks 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/loop.svg" height="24" width="24"
+              |    md-loop 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/loupe.svg" height="24" width="24"
+              |    md-loupe 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/loyalty.svg" height="24" width="24"
+              |    md-loyalty 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/mail.svg" height="24" width="24"
+              |    md-mail 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/map.svg" height="24" width="24"
+              |    md-map 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/markunread-mailbox.svg" height="24" width="24"
+              |    md-markunread-mailbox 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/markunread.svg" height="24" width="24"
+              |    md-markunread 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/memory.svg" height="24" width="24"
+              |    md-memory 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/menu.svg" height="24" width="24"
+              |    md-menu 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/merge-type.svg" height="24" width="24"
+              |    md-merge-type 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/message.svg" height="24" width="24"
+              |    md-message 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/messenger.svg" height="24" width="24"
+              |    md-messenger 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/mic-none.svg" height="24" width="24"
+              |    md-mic-none 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/mic-off.svg" height="24" width="24"
+              |    md-mic-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/mic.svg" height="24" width="24"
+              |    md-mic 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/mms.svg" height="24" width="24"
+              |    md-mms 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/mode-comment.svg" height="24" width="24"
+              |    md-mode-comment 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/mode-edit.svg" height="24" width="24"
+              |    md-mode-edit 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/mood.svg" height="24" width="24"
+              |    md-mood 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/more-horiz.svg" height="24" width="24"
+              |    md-more-horiz 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/more-vert.svg" height="24" width="24"
+              |    md-more-vert 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/more.svg" height="24" width="24"
+              |    md-more 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/mouse.svg" height="24" width="24"
+              |    md-mouse 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/movie-creation.svg" height="24" width="24"
+              |    md-movie-creation 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/movie.svg" height="24" width="24"
+              |    md-movie 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/multitrack-audio.svg" height="24" width="24"
+              |    md-multitrack-audio 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/my-library-add.svg" height="24" width="24"
+              |    md-my-library-add 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/my-library-books.svg" height="24" width="24"
+              |    md-my-library-books 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/my-library-music.svg" height="24" width="24"
+              |    md-my-library-music 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/my-location.svg" height="24" width="24"
+              |    md-my-location 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/nature-people.svg" height="24" width="24"
+              |    md-nature-people 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/nature.svg" height="24" width="24"
+              |    md-nature 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/navigate-before.svg" height="24" width="24"
+              |    md-navigate-before 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/navigate-next.svg" height="24" width="24"
+              |    md-navigate-next 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/navigation.svg" height="24" width="24"
+              |    md-navigation 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/network-cell.svg" height="24" width="24"
+              |    md-network-cell 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/network-locked.svg" height="24" width="24"
+              |    md-network-locked 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/network-wifi.svg" height="24" width="24"
+              |    md-network-wifi 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/new-releases.svg" height="24" width="24"
+              |    md-new-releases 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/nfc.svg" height="24" width="24"
+              |    md-nfc 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/no-sim.svg" height="24" width="24"
+              |    md-no-sim 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/not-interested.svg" height="24" width="24"
+              |    md-not-interested 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/note-add.svg" height="24" width="24"
+              |    md-note-add 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/notifications-none.svg" height="24" width="24"
+              |    md-notifications-none 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/notifications-off.svg" height="24" width="24"
+              |    md-notifications-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/notifications-on.svg" height="24" width="24"
+              |    md-notifications-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/notifications-paused.svg" height="24" width="24"
+              |    md-notifications-paused 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/notifications.svg" height="24" width="24"
+              |    md-notifications 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/now-wallpaper.svg" height="24" width="24"
+              |    md-now-wallpaper 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/now-widgets.svg" height="24" width="24"
+              |    md-now-widgets 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/open-in-browser.svg" height="24" width="24"
+              |    md-open-in-browser 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/open-in-new.svg" height="24" width="24"
+              |    md-open-in-new 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/open-with.svg" height="24" width="24"
+              |    md-open-with 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/pages.svg" height="24" width="24"
+              |    md-pages 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/pageview.svg" height="24" width="24"
+              |    md-pageview 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/palette.svg" height="24" width="24"
+              |    md-palette 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/panorama-fisheye.svg" height="24" width="24"
+              |    md-panorama-fisheye 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/panorama-horizontal.svg" height="24" width="24"
+              |    md-panorama-horizontal 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/panorama-vertical.svg" height="24" width="24"
+              |    md-panorama-vertical 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/panorama-wide-angle.svg" height="24" width="24"
+              |    md-panorama-wide-angle 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/panorama.svg" height="24" width="24"
+              |    md-panorama 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/party-mode.svg" height="24" width="24"
+              |    md-party-mode 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/pause-circle-fill.svg" height="24" width="24"
+              |    md-pause-circle-fill 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/pause-circle-outline.svg" height="24" width="24"
+              |    md-pause-circle-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/pause.svg" height="24" width="24"
+              |    md-pause 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/payment.svg" height="24" width="24"
+              |    md-payment 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/people-outline.svg" height="24" width="24"
+              |    md-people-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/people.svg" height="24" width="24"
+              |    md-people 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/perm-camera-mic.svg" height="24" width="24"
+              |    md-perm-camera-mic 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/perm-contact-cal.svg" height="24" width="24"
+              |    md-perm-contact-cal 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/perm-data-setting.svg" height="24" width="24"
+              |    md-perm-data-setting 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/perm-device-info.svg" height="24" width="24"
+              |    md-perm-device-info 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/perm-identity.svg" height="24" width="24"
+              |    md-perm-identity 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/perm-media.svg" height="24" width="24"
+              |    md-perm-media 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/perm-phone-msg.svg" height="24" width="24"
+              |    md-perm-phone-msg 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/perm-scan-wifi.svg" height="24" width="24"
+              |    md-perm-scan-wifi 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/person-add.svg" height="24" width="24"
+              |    md-person-add 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/person-outline.svg" height="24" width="24"
+              |    md-person-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/person.svg" height="24" width="24"
+              |    md-person 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phone-android.svg" height="24" width="24"
+              |    md-phone-android 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phone-bluetooth-speaker.svg" height="24" width="24"
+              |    md-phone-bluetooth-speaker 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phone-forwarded.svg" height="24" width="24"
+              |    md-phone-forwarded 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phone-in-talk.svg" height="24" width="24"
+              |    md-phone-in-talk 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phone-iphone.svg" height="24" width="24"
+              |    md-phone-iphone 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phone-locked.svg" height="24" width="24"
+              |    md-phone-locked 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phone-missed.svg" height="24" width="24"
+              |    md-phone-missed 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phone-paused.svg" height="24" width="24"
+              |    md-phone-paused 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phone.svg" height="24" width="24"
+              |    md-phone 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phonelink-off.svg" height="24" width="24"
+              |    md-phonelink-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/phonelink.svg" height="24" width="24"
+              |    md-phonelink 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/photo-album.svg" height="24" width="24"
+              |    md-photo-album 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/photo-camera.svg" height="24" width="24"
+              |    md-photo-camera 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/photo-library.svg" height="24" width="24"
+              |    md-photo-library 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/photo.svg" height="24" width="24"
+              |    md-photo 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/picture-in-picture.svg" height="24" width="24"
+              |    md-picture-in-picture 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/pin-drop.svg" height="24" width="24"
+              |    md-pin-drop 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/place.svg" height="24" width="24"
+              |    md-place 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/play-arrow.svg" height="24" width="24"
+              |    md-play-arrow 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/play-circle-fill.svg" height="24" width="24"
+              |    md-play-circle-fill 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/play-circle-outline.svg" height="24" width="24"
+              |    md-play-circle-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/play-download.svg" height="24" width="24"
+              |    md-play-download 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/play-install.svg" height="24" width="24"
+              |    md-play-install 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/play-shopping-bag.svg" height="24" width="24"
+              |    md-play-shopping-bag 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/playlist-add.svg" height="24" width="24"
+              |    md-playlist-add 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/plus-one.svg" height="24" width="24"
+              |    md-plus-one 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/poll.svg" height="24" width="24"
+              |    md-poll 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/polymer.svg" height="24" width="24"
+              |    md-polymer 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/portable-wifi-off.svg" height="24" width="24"
+              |    md-portable-wifi-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/portrait.svg" height="24" width="24"
+              |    md-portrait 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/print.svg" height="24" width="24"
+              |    md-print 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/public.svg" height="24" width="24"
+              |    md-public 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/publish.svg" height="24" width="24"
+              |    md-publish 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/query-builder.svg" height="24" width="24"
+              |    md-query-builder 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/question-answer.svg" height="24" width="24"
+              |    md-question-answer 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/queue-music.svg" height="24" width="24"
+              |    md-queue-music 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/queue.svg" height="24" width="24"
+              |    md-queue 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/quick-contacts-dialer.svg" height="24" width="24"
+              |    md-quick-contacts-dialer 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/quick-contacts-mail.svg" height="24" width="24"
+              |    md-quick-contacts-mail 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/radio-button-off.svg" height="24" width="24"
+              |    md-radio-button-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/radio-button-on.svg" height="24" width="24"
+              |    md-radio-button-on 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/radio.svg" height="24" width="24"
+              |    md-radio 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/rate-review.svg" height="24" width="24"
+              |    md-rate-review 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/receipt.svg" height="24" width="24"
+              |    md-receipt 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/recent-actors.svg" height="24" width="24"
+              |    md-recent-actors 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/redeem.svg" height="24" width="24"
+              |    md-redeem 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/redo.svg" height="24" width="24"
+              |    md-redo 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/refresh.svg" height="24" width="24"
+              |    md-refresh 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/remove-circle-outline.svg" height="24" width="24"
+              |    md-remove-circle-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/remove-circle.svg" height="24" width="24"
+              |    md-remove-circle 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/remove-red-eye.svg" height="24" width="24"
+              |    md-remove-red-eye 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/remove.svg" height="24" width="24"
+              |    md-remove 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/reorder.svg" height="24" width="24"
+              |    md-reorder 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/repeat-one.svg" height="24" width="24"
+              |    md-repeat-one 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/repeat.svg" height="24" width="24"
+              |    md-repeat 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/replay.svg" height="24" width="24"
+              |    md-replay 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/reply-all.svg" height="24" width="24"
+              |    md-reply-all 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/reply.svg" height="24" width="24"
+              |    md-reply 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/report-problem.svg" height="24" width="24"
+              |    md-report-problem 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/report.svg" height="24" width="24"
+              |    md-report 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/restaurant-menu.svg" height="24" width="24"
+              |    md-restaurant-menu 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/restore.svg" height="24" width="24"
+              |    md-restore 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/ring-volume.svg" height="24" width="24"
+              |    md-ring-volume 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/room.svg" height="24" width="24"
+              |    md-room 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/rotate-left.svg" height="24" width="24"
+              |    md-rotate-left 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/rotate-right.svg" height="24" width="24"
+              |    md-rotate-right 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/satellite.svg" height="24" width="24"
+              |    md-satellite 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/save.svg" height="24" width="24"
+              |    md-save 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/schedule.svg" height="24" width="24"
+              |    md-schedule 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/school.svg" height="24" width="24"
+              |    md-school 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/screen-lock-landscape.svg" height="24" width="24"
+              |    md-screen-lock-landscape 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/screen-lock-portrait.svg" height="24" width="24"
+              |    md-screen-lock-portrait 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/screen-lock-rotation.svg" height="24" width="24"
+              |    md-screen-lock-rotation 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/screen-rotation.svg" height="24" width="24"
+              |    md-screen-rotation 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/sd-card.svg" height="24" width="24"
+              |    md-sd-card 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/sd-storage.svg" height="24" width="24"
+              |    md-sd-storage 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/search.svg" height="24" width="24"
+              |    md-search 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/security.svg" height="24" width="24"
+              |    md-security 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/select-all.svg" height="24" width="24"
+              |    md-select-all 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/send.svg" height="24" width="24"
+              |    md-send 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-applications.svg" height="24" width="24"
+              |    md-settings-applications 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-backup-restore.svg" height="24" width="24"
+              |    md-settings-backup-restore 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-bluetooth.svg" height="24" width="24"
+              |    md-settings-bluetooth 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-cell.svg" height="24" width="24"
+              |    md-settings-cell 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-display.svg" height="24" width="24"
+              |    md-settings-display 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-ethernet.svg" height="24" width="24"
+              |    md-settings-ethernet 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-input-antenna.svg" height="24" width="24"
+              |    md-settings-input-antenna 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-input-component.svg" height="24" width="24"
+              |    md-settings-input-component 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-input-composite.svg" height="24" width="24"
+              |    md-settings-input-composite 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-input-hdmi.svg" height="24" width="24"
+              |    md-settings-input-hdmi 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-input-svideo.svg" height="24" width="24"
+              |    md-settings-input-svideo 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-overscan.svg" height="24" width="24"
+              |    md-settings-overscan 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-phone.svg" height="24" width="24"
+              |    md-settings-phone 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-power.svg" height="24" width="24"
+              |    md-settings-power 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-remote.svg" height="24" width="24"
+              |    md-settings-remote 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-system-daydream.svg" height="24" width="24"
+              |    md-settings-system-daydream 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings-voice.svg" height="24" width="24"
+              |    md-settings-voice 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/settings.svg" height="24" width="24"
+              |    md-settings 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/share.svg" height="24" width="24"
+              |    md-share 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/shop-two.svg" height="24" width="24"
+              |    md-shop-two 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/shop.svg" height="24" width="24"
+              |    md-shop 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/shopping-basket.svg" height="24" width="24"
+              |    md-shopping-basket 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/shopping-cart.svg" height="24" width="24"
+              |    md-shopping-cart 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/shuffle.svg" height="24" width="24"
+              |    md-shuffle 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-0-bar.svg" height="24" width="24"
+              |    md-signal-cellular-0-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-1-bar.svg" height="24" width="24"
+              |    md-signal-cellular-1-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-2-bar.svg" height="24" width="24"
+              |    md-signal-cellular-2-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-3-bar.svg" height="24" width="24"
+              |    md-signal-cellular-3-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-4-bar.svg" height="24" width="24"
+              |    md-signal-cellular-4-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-connected-no-internet-0-bar.svg" height="24" width="24"
+              |    md-signal-cellular-connected-no-internet-0-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-connected-no-internet-1-bar.svg" height="24" width="24"
+              |    md-signal-cellular-connected-no-internet-1-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-connected-no-internet-2-bar.svg" height="24" width="24"
+              |    md-signal-cellular-connected-no-internet-2-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-connected-no-internet-3-bar.svg" height="24" width="24"
+              |    md-signal-cellular-connected-no-internet-3-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-connected-no-internet-4-bar.svg" height="24" width="24"
+              |    md-signal-cellular-connected-no-internet-4-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-no-sim.svg" height="24" width="24"
+              |    md-signal-cellular-no-sim 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-null.svg" height="24" width="24"
+              |    md-signal-cellular-null 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-cellular-off.svg" height="24" width="24"
+              |    md-signal-cellular-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-wifi-0-bar.svg" height="24" width="24"
+              |    md-signal-wifi-0-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-wifi-1-bar.svg" height="24" width="24"
+              |    md-signal-wifi-1-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-wifi-2-bar.svg" height="24" width="24"
+              |    md-signal-wifi-2-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-wifi-3-bar.svg" height="24" width="24"
+              |    md-signal-wifi-3-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-wifi-4-bar.svg" height="24" width="24"
+              |    md-signal-wifi-4-bar 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/signal-wifi-off.svg" height="24" width="24"
+              |    md-signal-wifi-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/sim-card-alert.svg" height="24" width="24"
+              |    md-sim-card-alert 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/sim-card.svg" height="24" width="24"
+              |    md-sim-card 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/skip-next.svg" height="24" width="24"
+              |    md-skip-next 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/skip-previous.svg" height="24" width="24"
+              |    md-skip-previous 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/slideshow.svg" height="24" width="24"
+              |    md-slideshow 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/smartphone.svg" height="24" width="24"
+              |    md-smartphone 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/sms-failed.svg" height="24" width="24"
+              |    md-sms-failed 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/sms.svg" height="24" width="24"
+              |    md-sms 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/snooze.svg" height="24" width="24"
+              |    md-snooze 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/sort.svg" height="24" width="24"
+              |    md-sort 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/speaker-notes.svg" height="24" width="24"
+              |    md-speaker-notes 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/speaker.svg" height="24" width="24"
+              |    md-speaker 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/spellcheck.svg" height="24" width="24"
+              |    md-spellcheck 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/star-half.svg" height="24" width="24"
+              |    md-star-half 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/star-outline.svg" height="24" width="24"
+              |    md-star-outline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/star-rate.svg" height="24" width="24"
+              |    md-star-rate 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/star.svg" height="24" width="24"
+              |    md-star 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/stars.svg" height="24" width="24"
+              |    md-stars 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/stay-current-landscape.svg" height="24" width="24"
+              |    md-stay-current-landscape 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/stay-current-portrait.svg" height="24" width="24"
+              |    md-stay-current-portrait 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/stay-primary-landscape.svg" height="24" width="24"
+              |    md-stay-primary-landscape 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/stay-primary-portrait.svg" height="24" width="24"
+              |    md-stay-primary-portrait 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/stop.svg" height="24" width="24"
+              |    md-stop 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/storage.svg" height="24" width="24"
+              |    md-storage 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/store-mall-directory.svg" height="24" width="24"
+              |    md-store-mall-directory 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/store.svg" height="24" width="24"
+              |    md-store 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/straighten.svg" height="24" width="24"
+              |    md-straighten 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/style.svg" height="24" width="24"
+              |    md-style 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/subject.svg" height="24" width="24"
+              |    md-subject 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/subtitles.svg" height="24" width="24"
+              |    md-subtitles 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/supervisor-account.svg" height="24" width="24"
+              |    md-supervisor-account 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/surround-sound.svg" height="24" width="24"
+              |    md-surround-sound 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/swap-calls.svg" height="24" width="24"
+              |    md-swap-calls 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/swap-horiz.svg" height="24" width="24"
+              |    md-swap-horiz 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/swap-vert-circle.svg" height="24" width="24"
+              |    md-swap-vert-circle 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/swap-vert.svg" height="24" width="24"
+              |    md-swap-vert 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/switch-camera.svg" height="24" width="24"
+              |    md-switch-camera 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/switch-video.svg" height="24" width="24"
+              |    md-switch-video 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/sync-disabled.svg" height="24" width="24"
+              |    md-sync-disabled 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/sync-problem.svg" height="24" width="24"
+              |    md-sync-problem 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/sync.svg" height="24" width="24"
+              |    md-sync 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/system-update-tv.svg" height="24" width="24"
+              |    md-system-update-tv 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/system-update.svg" height="24" width="24"
+              |    md-system-update 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/tab-unselected.svg" height="24" width="24"
+              |    md-tab-unselected 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/tab.svg" height="24" width="24"
+              |    md-tab 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/tablet-android.svg" height="24" width="24"
+              |    md-tablet-android 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/tablet-mac.svg" height="24" width="24"
+              |    md-tablet-mac 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/tablet.svg" height="24" width="24"
+              |    md-tablet 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/tag-faces.svg" height="24" width="24"
+              |    md-tag-faces 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/tap-and-play.svg" height="24" width="24"
+              |    md-tap-and-play 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/terrain.svg" height="24" width="24"
+              |    md-terrain 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/text-format.svg" height="24" width="24"
+              |    md-text-format 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/textsms.svg" height="24" width="24"
+              |    md-textsms 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/texture.svg" height="24" width="24"
+              |    md-texture 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/theaters.svg" height="24" width="24"
+              |    md-theaters 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/thumb-down.svg" height="24" width="24"
+              |    md-thumb-down 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/thumb-up.svg" height="24" width="24"
+              |    md-thumb-up 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/thumbs-up-down.svg" height="24" width="24"
+              |    md-thumbs-up-down 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/time-to-leave.svg" height="24" width="24"
+              |    md-time-to-leave 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/timelapse.svg" height="24" width="24"
+              |    md-timelapse 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/timer-10.svg" height="24" width="24"
+              |    md-timer-10 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/timer-3.svg" height="24" width="24"
+              |    md-timer-3 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/timer-auto.svg" height="24" width="24"
+              |    md-timer-auto 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/timer-off.svg" height="24" width="24"
+              |    md-timer-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/timer.svg" height="24" width="24"
+              |    md-timer 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/toc.svg" height="24" width="24"
+              |    md-toc 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/today.svg" height="24" width="24"
+              |    md-today 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/tonality.svg" height="24" width="24"
+              |    md-tonality 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/track-changes.svg" height="24" width="24"
+              |    md-track-changes 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/traffic.svg" height="24" width="24"
+              |    md-traffic 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/transform.svg" height="24" width="24"
+              |    md-transform 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/translate.svg" height="24" width="24"
+              |    md-translate 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/trending-down.svg" height="24" width="24"
+              |    md-trending-down 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/trending-neutral.svg" height="24" width="24"
+              |    md-trending-neutral 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/trending-up.svg" height="24" width="24"
+              |    md-trending-up 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/tune.svg" height="24" width="24"
+              |    md-tune 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/turned-in-not.svg" height="24" width="24"
+              |    md-turned-in-not 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/turned-in.svg" height="24" width="24"
+              |    md-turned-in 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/tv.svg" height="24" width="24"
+              |    md-tv 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/undo.svg" height="24" width="24"
+              |    md-undo 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/unfold-less.svg" height="24" width="24"
+              |    md-unfold-less 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/unfold-more.svg" height="24" width="24"
+              |    md-unfold-more 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/usb.svg" height="24" width="24"
+              |    md-usb 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/verified-user.svg" height="24" width="24"
+              |    md-verified-user 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/vertical-align-bottom.svg" height="24" width="24"
+              |    md-vertical-align-bottom 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/vertical-align-center.svg" height="24" width="24"
+              |    md-vertical-align-center 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/vertical-align-top.svg" height="24" width="24"
+              |    md-vertical-align-top 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/vibration.svg" height="24" width="24"
+              |    md-vibration 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/video-collection.svg" height="24" width="24"
+              |    md-video-collection 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/videocam-off.svg" height="24" width="24"
+              |    md-videocam-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/videocam.svg" height="24" width="24"
+              |    md-videocam 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-agenda.svg" height="24" width="24"
+              |    md-view-agenda 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-array.svg" height="24" width="24"
+              |    md-view-array 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-carousel.svg" height="24" width="24"
+              |    md-view-carousel 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-column.svg" height="24" width="24"
+              |    md-view-column 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-day.svg" height="24" width="24"
+              |    md-view-day 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-headline.svg" height="24" width="24"
+              |    md-view-headline 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-list.svg" height="24" width="24"
+              |    md-view-list 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-module.svg" height="24" width="24"
+              |    md-view-module 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-quilt.svg" height="24" width="24"
+              |    md-view-quilt 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-stream.svg" height="24" width="24"
+              |    md-view-stream 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/view-week.svg" height="24" width="24"
+              |    md-view-week 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/visibility-off.svg" height="24" width="24"
+              |    md-visibility-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/visibility.svg" height="24" width="24"
+              |    md-visibility 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/voice-chat.svg" height="24" width="24"
+              |    md-voice-chat 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/voicemail.svg" height="24" width="24"
+              |    md-voicemail 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/volume-down.svg" height="24" width="24"
+              |    md-volume-down 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/volume-mute.svg" height="24" width="24"
+              |    md-volume-mute 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/volume-off.svg" height="24" width="24"
+              |    md-volume-off 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/volume-up.svg" height="24" width="24"
+              |    md-volume-up 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/vpn-key.svg" height="24" width="24"
+              |    md-vpn-key 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/vpn-lock.svg" height="24" width="24"
+              |    md-vpn-lock 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wallet-giftcard.svg" height="24" width="24"
+              |    md-wallet-giftcard 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wallet-membership.svg" height="24" width="24"
+              |    md-wallet-membership 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wallet-travel.svg" height="24" width="24"
+              |    md-wallet-travel 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/warning.svg" height="24" width="24"
+              |    md-warning 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/watch.svg" height="24" width="24"
+              |    md-watch 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wb-auto.svg" height="24" width="24"
+              |    md-wb-auto 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wb-cloudy.svg" height="24" width="24"
+              |    md-wb-cloudy 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wb-incandescent.svg" height="24" width="24"
+              |    md-wb-incandescent 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wb-irradescent.svg" height="24" width="24"
+              |    md-wb-irradescent 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wb-sunny.svg" height="24" width="24"
+              |    md-wb-sunny 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/web.svg" height="24" width="24"
+              |    md-web 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/whatshot.svg" height="24" width="24"
+              |    md-whatshot 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wifi-lock.svg" height="24" width="24"
+              |    md-wifi-lock 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wifi-tethering.svg" height="24" width="24"
+              |    md-wifi-tethering 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/work.svg" height="24" width="24"
+              |    md-work 
+            .col-sm-6.col-md-4.col-lg-2
+              img src="assets/img/md/dark/wrap-text.svg" height="24" width="24"
+              |    md-wrap-text 
+            .clearfix
+            hr
+            .alert.alert-info role="alert" style="margin-bottom:0"
+              i.fa.fa-fw.fa-info-circle
+              |  Icons by Google Inc. (CC BY 3.0) : 
+              a href="https://github.com/google/material-design-icons"
+                | https://github.com/google/material-design-icons
+      footer.cm-footer
+        span.pull-left
+          | Connected as John Smith
+        span.pull-right
+          | © PAOMEDIA SARL
+    script src="assets/js/lib/jquery-2.1.3.min.js"
+    script src="assets/js/jquery.mousewheel.min.js"
+    script src="assets/js/jquery.cookie.min.js"
+    script src="assets/js/fastclick.min.js"
+    script src="assets/js/bootstrap.min.js"
+    script src="assets/js/clearmin.min.js"

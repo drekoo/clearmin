@@ -1,0 +1,267 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    title
+      | Clearmin template
+  body.cm-no-transition.cm-1-navbar
+    #cm-menu
+      nav.cm-navbar.cm-navbar-primary
+        .cm-flex
+          a.cm-logo href="index.html"
+        .btn.btn-primary.md-menu-white data-toggle="cm-menu"
+      #cm-menu-content
+        #cm-menu-items-wrapper
+          #cm-menu-scroller
+            ul.cm-menu-items
+              li.active
+                a.sf-house href="index.html"
+                  | Home
+              li
+                a.sf-dashboard href="dashboard-sales.html"
+                  | Dashboard
+              li
+                a.sf-brick href="components-text.html"
+                  | Components
+              li.cm-submenu
+                a.sf-window-layout
+                  | Navbar layouts 
+                  span.caret
+                ul
+                  li
+                    a href="layouts-breadcrumb1.html"
+                      | 1st nav breadcrumb
+                  li
+                    a href="layouts-breadcrumb2.html"
+                      | 2nd nav breadcrumb
+                  li
+                    a href="layouts-tabs.html"
+                      | 2nd nav tabs
+              li.cm-submenu
+                a.sf-cat
+                  | Icons 
+                  span.caret
+                ul
+                  li
+                    a href="ico-sf.html"
+                      | Small-n-flat
+                  li
+                    a href="ico-md.html"
+                      | Material Design
+                  li
+                    a href="ico-fa.html"
+                      | Font Awesome
+              li
+                a.sf-notepad href="notepad.html"
+                  | Text Editor
+              li
+                a.sf-lock-open href="login.html"
+                  | Login page
+    header#cm-header
+      nav.cm-navbar.cm-navbar-primary
+        .btn.btn-primary.md-menu-white.hidden-md.hidden-lg data-toggle="cm-menu"
+        .cm-flex
+          h1
+            | Home
+          form#cm-search action="index.html" method="get"
+            input type="search" name="q" autocomplete="off" placeholder="Search..."
+        .pull-right
+          #cm-search-btn.btn.btn-primary.md-search-white data-toggle="cm-search"
+        .dropdown.pull-right
+          button.btn.btn-primary.md-notifications-white data-toggle="dropdown"
+            span.label.label-danger
+              | 23
+          .popover.cm-popover.bottom
+            .arrow
+            .popover-content
+              .list-group
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading.text-overflow
+                  i.fa.fa-fw.fa-envelope
+                  |  Nunc volutpat aliquet magna. 
+                p.list-group-item-text.text-overflow
+                  | Pellentesque tincidunt mollis scelerisque. Praesent vel blandit quam.
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-envelope
+                  |  Aliquam orci lectus 
+                p.list-group-item-text
+                  | Donec quis arcu non risus sagittis
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-warning
+                  |  Holy guacamole ! 
+                p.list-group-item-text
+                  | Best check yo self, you're not looking too good.
+              div style="padding:10px"
+                a.btn.btn-success.btn-block href="#"
+                  | Show me more...
+        .dropdown.pull-right
+          button.btn.btn-primary.md-account-circle-white data-toggle="dropdown"
+          ul.dropdown-menu
+            li.disabled.text-center
+              a style="cursor:default;"
+                strong
+                  | John Smith
+            li.divider
+            li
+              a href="#"
+                i.fa.fa-fw.fa-user
+                |  Profile
+            li
+              a href="#"
+                i.fa.fa-fw.fa-cog
+                |  Settings
+            li
+              a href="login.html"
+                i.fa.fa-fw.fa-sign-out
+                |  Sign out
+    #global
+      .container-fluid.cm-container-white
+        h2 style="margin-top:0;"
+          | Welcome to Clearmin template demo !
+        p
+          | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.
+      .container-fluid
+        .row.cm-fix-height
+          .col-sm-4
+            .panel.panel-default
+              .panel-body
+                img.img-responsive src="assets/img/sass-less.png" alt="Less support"
+                br
+                p
+                  | Clearmin ships with vanilla CSS, but its source code utilizes Less CSS preprocessor. Quickly get started with precompiled CSS or build on the source. Colors and sizes are easily customizable with less variables.
+          .col-sm-4
+            .panel.panel-default
+              .panel-body
+                img.img-responsive src="assets/img/devices.png" alt="Responsive across devices"
+                br
+                p
+                  | Clearmin easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries. Swipe from left on phones to toggle main menu.
+          .col-sm-4
+            .panel.panel-default
+              .panel-body
+                img.img-responsive src="assets/img/components.png" alt="Components"
+                br
+                p
+                  | With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins.
+        .row.cm-fix-height
+          .col-xs-6.col-sm-4.col-md-3.col-lg-2
+            a.panel.panel-default.thumbnail.cm-thumbnail href="dashboard-sales.html"
+
+            .panel-body.text-center
+              span.svg-48
+                img src="assets/img/sf/dashboard.svg" alt="dashboard"
+              h4
+                | Dashboard
+              small
+                | C3.js charts to display some fancy pies.
+          .col-xs-6.col-sm-4.col-md-3.col-lg-2
+            a.panel.panel-default.thumbnail.cm-thumbnail href="notepad.html"
+
+            .panel-body.text-center
+              span.svg-48
+                img src="assets/img/sf/notepad.svg" alt="notepad"
+              h4
+                | Text editor
+              small
+                | Summernote WYSIWYG Editor implementation.
+          .col-xs-6.col-sm-4.col-md-3.col-lg-2
+            a.panel.panel-default.thumbnail.cm-thumbnail href="components-text.html"
+
+            .panel-body.text-center
+              span.svg-48
+                img src="assets/img/sf/brick.svg" alt="brick"
+              h4
+                | Components
+              small
+                | Bootstrap main classes.
+          .col-xs-6.col-sm-4.col-md-3.col-lg-2
+            a.panel.panel-default.thumbnail.cm-thumbnail href="layouts-breadcrumb1.html"
+
+            .panel-body.text-center
+              span.svg-48
+                img src="assets/img/sf/window-layout.svg" alt="window-layout"
+              h4
+                | Navbar layouts
+              small
+                | Put all you need on the top of your screen.
+          .col-xs-6.col-sm-4.col-md-3.col-lg-2
+            a.panel.panel-default.thumbnail.cm-thumbnail href="ico-sf.html"
+
+            .panel-body.text-center
+              span.svg-48
+                img src="assets/img/sf/cat.svg" alt="cat"
+              h4
+                | Icons
+              small
+                | Semantic little pics.
+          .col-xs-6.col-sm-4.col-md-3.col-lg-2
+            a.panel.panel-default.thumbnail.cm-thumbnail href="login.html"
+
+            .panel-body.text-center
+              span.svg-48
+                img src="assets/img/sf/lock-open.svg" alt="lock-open"
+              h4
+                | Login page
+              small
+                | Have a look to the login page.
+        .panel.panel-default
+          .panel-heading
+            | Check our fancy colors
+          #demo-buttons.panel-body
+            p
+              | Click buttons below to change navbar main color :
+            .row
+              .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                button.btn.btn-block.btn-primary data-switch-color="primary"
+                  | primary
+                br
+              .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                button.btn.btn-block.btn-success data-switch-color="success"
+                  | success
+                br
+              .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                button.btn.btn-block.btn-info data-switch-color="info"
+                  | info
+                br
+              .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                button.btn.btn-block.btn-warning data-switch-color="warning"
+                  | warning
+                br
+              .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                button.btn.btn-block.btn-danger data-switch-color="danger"
+                  | danger
+                br
+              .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                button.btn.btn-block.btn-gray data-switch-color="gray"
+                  | gray
+                br
+              .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                button.btn.btn-block.btn-yellow data-switch-color="yellow"
+                  | yellow
+                br
+              .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                button.btn.btn-block.btn-purple data-switch-color="purple"
+                  | purple
+                br
+              .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                button.btn.btn-block.btn-turquoise data-switch-color="turquoise"
+                  | turquoise
+                br
+              .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                button.btn.btn-block.btn-midnight data-switch-color="midnight"
+                  | midnight
+                br
+
+      footer.cm-footer
+        span.pull-left
+          | Connected as John Smith
+        span.pull-right
+          | © PAOMEDIA SARL
+
+    script src="assets/js/demo/home.js"

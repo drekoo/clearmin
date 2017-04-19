@@ -1,0 +1,3862 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    link rel="stylesheet" type="text/css" href="assets/css/bootstrap-clearmin.min.css"
+    link rel="stylesheet" type="text/css" href="assets/css/roboto.css"
+    link rel="stylesheet" type="text/css" href="assets/css/material-design.css"
+    link rel="stylesheet" type="text/css" href="assets/css/small-n-flat.css"
+    link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"
+    title
+      | Clearmin template
+  body.cm-no-transition.cm-1-navbar
+    #cm-menu
+      nav.cm-navbar.cm-navbar-primary
+        .cm-flex
+          a.cm-logo href="index.html"
+        .btn.btn-primary.md-menu-white data-toggle="cm-menu"
+      #cm-menu-content
+        #cm-menu-items-wrapper
+          #cm-menu-scroller
+            ul.cm-menu-items
+              li
+                a.sf-house href="index.html"
+                  | Home
+              li
+                a.sf-dashboard href="dashboard-sales.html"
+                  | Dashboard
+              li
+                a.sf-brick href="components-text.html"
+                  | Components
+              li.cm-submenu
+                a.sf-window-layout
+                  | Navbar layouts 
+                  span.caret
+                ul
+                  li
+                    a href="layouts-breadcrumb1.html"
+                      | 1st nav breadcrumb
+                  li
+                    a href="layouts-breadcrumb2.html"
+                      | 2nd nav breadcrumb
+                  li
+                    a href="layouts-tabs.html"
+                      | 2nd nav tabs
+              li.cm-submenu.pre-open
+                a.sf-cat
+                  | Icons 
+                  span.caret
+                ul
+                  li
+                    a href="ico-sf.html"
+                      | Small-n-flat
+                  li
+                    a href="ico-md.html"
+                      | Material Design
+                  li.active
+                    a href="ico-fa.html"
+                      | Font Awesome
+              li
+                a.sf-notepad href="notepad.html"
+                  | Text Editor
+              li
+                a.sf-lock-open href="login.html"
+                  | Login page
+    header#cm-header
+      nav.cm-navbar.cm-navbar-primary
+        .btn.btn-primary.md-menu-white.hidden-md.hidden-lg data-toggle="cm-menu"
+        .cm-flex
+          h1
+            | Font Awesome Icons
+          form#cm-search action="index.html" method="get"
+            input type="search" name="q" autocomplete="off" placeholder="Search..."
+        .pull-right
+          #cm-search-btn.btn.btn-primary.md-search-white data-toggle="cm-search"
+        .dropdown.pull-right
+          button.btn.btn-primary.md-notifications-white data-toggle="dropdown"
+            span.label.label-danger
+              | 23
+          .popover.cm-popover.bottom
+            .arrow
+            .popover-content
+              .list-group
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading.text-overflow
+                  i.fa.fa-fw.fa-envelope
+                  |  Nunc volutpat aliquet magna. 
+                p.list-group-item-text.text-overflow
+                  | Pellentesque tincidunt mollis scelerisque. Praesent vel blandit quam.
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-envelope
+                  |  Aliquam orci lectus 
+                p.list-group-item-text
+                  | Donec quis arcu non risus sagittis
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-warning
+                  |  Holy guacamole ! 
+                p.list-group-item-text
+                  | Best check yo self, you're not looking too good.
+              div style="padding:10px"
+                a.btn.btn-success.btn-block href="#"
+                  | Show me more...
+        .dropdown.pull-right
+          button.btn.btn-primary.md-account-circle-white data-toggle="dropdown"
+          ul.dropdown-menu
+            li.disabled.text-center
+              a style="cursor:default;"
+                strong
+                  | John Smith
+            li.divider
+            li
+              a href="#"
+                i.fa.fa-fw.fa-user
+                |  Profile
+            li
+              a href="#"
+                i.fa.fa-fw.fa-cog
+                |  Settings
+            li
+              a href="login.html"
+                i.fa.fa-fw.fa-sign-out
+                |  Sign out
+    #global
+      style
+        |  .demo-icons .col-lg-3{ padding:10px; border:1px solid transparent; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; border-radius:2px; } .col-lg-3:hover{background:#f5f5f5;border-color:#eee;} 
+      .container-fluid
+        .panel.panel-default.demo-icons
+          .panel-heading
+            | ICONIC FONT CLASSES and Unicode
+            span.badge.pull-right
+              | 513 icons
+          .panel-body
+            .row
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-adjust 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-adn 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-align-center 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-align-justify 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-align-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-align-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ambulance 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-anchor 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-android 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-angellist 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-angle-double-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-angle-double-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-angle-double-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-angle-double-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-angle-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-angle-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-angle-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-angle-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-apple 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-archive 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-area-chart 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-circle-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-circle-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-circle-o-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-circle-o-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-circle-o-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-circle-o-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-circle-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-circle-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrow-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrows 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrows-alt 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrows-h 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-arrows-v 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-asterisk 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-at 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-automobile 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-backward 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ban 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bank 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bar-chart 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bar-chart-o 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-barcode 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bars 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bed 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-beer 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-behance 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-behance-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bell 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bell-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bell-slash 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bell-slash-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bicycle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-binoculars 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-birthday-cake 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bitbucket 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bitbucket-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bitcoin 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bold 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bolt 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bomb 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-book 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bookmark 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bookmark-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-briefcase 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-btc 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bug 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-building 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-building-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bullhorn 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bullseye 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-bus 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-buysellads 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cab 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-calculator 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-calendar 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-calendar-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-camera 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-camera-retro 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-car 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-caret-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-caret-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-caret-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-caret-square-o-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-caret-square-o-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-caret-square-o-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-caret-square-o-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-caret-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cart-arrow-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cart-plus 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cc 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cc-amex 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cc-discover 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cc-mastercard 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cc-paypal 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cc-stripe 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cc-visa 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-certificate 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-chain 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-chain-broken 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-check 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-check-circle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-check-circle-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-check-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-check-square-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-chevron-circle-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-chevron-circle-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-chevron-circle-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-chevron-circle-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-chevron-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-chevron-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-chevron-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-chevron-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-child 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-circle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-circle-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-circle-o-notch 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-circle-thin 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-clipboard 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-clock-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-close 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cloud 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cloud-download 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cloud-upload 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cny 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-code 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-code-fork 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-codepen 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-coffee 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cog 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cogs 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-columns 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-comment 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-comment-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-comments 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-comments-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-compass 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-compress 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-connectdevelop 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-copy 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-copyright 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-credit-card 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-crop 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-crosshairs 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-css3 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cube 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cubes 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cut 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-cutlery 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-dashboard 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-dashcube 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-database 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-dedent 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-delicious 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-desktop 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-deviantart 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-diamond 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-digg 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-dollar 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-dot-circle-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-download 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-dribbble 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-dropbox 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-drupal 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-edit 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-eject 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ellipsis-h 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ellipsis-v 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-empire 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-envelope 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-envelope-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-envelope-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-eraser 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-eur 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-euro 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-exchange 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-exclamation 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-exclamation-circle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-exclamation-triangle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-expand 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-external-link 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-external-link-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-eye 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-eye-slash 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-eyedropper 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-facebook 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-facebook-f 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-facebook-official 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-facebook-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-fast-backward 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-fast-forward 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-fax 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-female 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-fighter-jet 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-archive-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-audio-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-code-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-excel-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-image-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-movie-o 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-pdf-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-photo-o 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-picture-o 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-powerpoint-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-sound-o 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-text 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-text-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-video-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-word-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-file-zip-o 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-files-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-film 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-filter 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-fire 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-fire-extinguisher 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-flag 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-flag-checkered 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-flag-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-flash 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-flask 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-flickr 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-floppy-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-folder 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-folder-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-folder-open 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-folder-open-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-font 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-forumbee 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-forward 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-foursquare 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-frown-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-futbol-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-gamepad 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-gavel 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-gbp 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ge 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-gear 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-gears 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-genderless 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-gift 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-git 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-git-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-github 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-github-alt 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-github-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-gittip 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-glass 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-globe 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-google 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-google-plus 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-google-plus-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-google-wallet 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-graduation-cap 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-gratipay 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-group 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-h-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-hacker-news 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-hand-o-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-hand-o-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-hand-o-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-hand-o-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-hdd-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-header 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-headphones 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-heart 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-heart-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-heartbeat 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-history 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-home 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-hospital-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-hotel 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-html5 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ils 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-image 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-inbox 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-indent 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-info 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-info-circle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-inr 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-instagram 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-institution 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ioxhost 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-italic 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-joomla 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-jpy 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-jsfiddle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-key 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-keyboard-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-krw 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-language 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-laptop 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-lastfm 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-lastfm-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-leaf 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-leanpub 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-legal 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-lemon-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-level-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-level-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-life-bouy 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-life-buoy 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-life-ring 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-life-saver 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-lightbulb-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-line-chart 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-link 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-linkedin 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-linkedin-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-linux 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-list 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-list-alt 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-list-ol 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-list-ul 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-location-arrow 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-lock 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-long-arrow-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-long-arrow-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-long-arrow-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-long-arrow-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-magic 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-magnet 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mail-forward 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mail-reply 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mail-reply-all 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-male 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-map-marker 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mars 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mars-double 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mars-stroke 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mars-stroke-h 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mars-stroke-v 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-maxcdn 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-meanpath 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-medium 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-medkit 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-meh-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mercury 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-microphone 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-microphone-slash 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-minus 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-minus-circle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-minus-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-minus-square-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mobile 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mobile-phone 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-money 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-moon-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-mortar-board 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-motorcycle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-music 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-navicon 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-neuter 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-newspaper-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-openid 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-outdent 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pagelines 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-paint-brush 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-paper-plane 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-paper-plane-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-paperclip 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-paragraph 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-paste 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pause 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-paw 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-paypal 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pencil 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pencil-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pencil-square-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-phone 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-phone-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-photo 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-picture-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pie-chart 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pied-piper 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pied-piper-alt 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pinterest 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pinterest-p 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-pinterest-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-plane 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-play 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-play-circle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-play-circle-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-plug 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-plus 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-plus-circle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-plus-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-plus-square-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-power-off 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-print 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-puzzle-piece 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-qq 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-qrcode 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-question 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-question-circle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-quote-left 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-quote-right 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ra 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-random 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-rebel 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-recycle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-reddit 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-reddit-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-refresh 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-remove 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-renren 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-reorder 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-repeat 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-reply 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-reply-all 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-retweet 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-rmb 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-road 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-rocket 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-rotate-left 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-rotate-right 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-rouble 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-rss 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-rss-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-rub 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ruble 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-rupee 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-save 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-scissors 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-search 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-search-minus 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-search-plus 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sellsy 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-send 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-send-o 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-server 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-share 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-share-alt 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-share-alt-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-share-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-share-square-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-shekel 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sheqel 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-shield 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ship 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-shirtsinbulk 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-shopping-cart 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sign-in 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sign-out 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-signal 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-simplybuilt 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sitemap 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-skyatlas 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-skype 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-slack 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sliders 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-slideshare 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-smile-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-soccer-ball-o 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort-alpha-asc 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort-alpha-desc 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort-amount-asc 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort-amount-desc 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort-asc 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort-desc 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort-down 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort-numeric-asc 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort-numeric-desc 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sort-up 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-soundcloud 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-space-shuttle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-spinner 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-spoon 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-spotify 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-square-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-stack-exchange 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-stack-overflow 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-star 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-star-half 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-star-half-empty 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-star-half-full 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-star-half-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-star-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-steam 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-steam-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-step-backward 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-step-forward 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-stethoscope 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-stop 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-street-view 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-strikethrough 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-stumbleupon 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-stumbleupon-circle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-subscript 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-subway 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-suitcase 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-sun-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-superscript 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-support 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-table 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tablet 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tachometer 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tag 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tags 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tasks 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-taxi 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tencent-weibo 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-terminal 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-text-height 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-text-width 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-th 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-th-large 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-th-list 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-thumb-tack 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-thumbs-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-thumbs-o-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-thumbs-o-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-thumbs-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-ticket 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-times 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-times-circle 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-times-circle-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tint 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-toggle-down 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-toggle-left 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-toggle-off 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-toggle-on 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-toggle-right 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-toggle-up 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-train 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-transgender 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-transgender-alt 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-trash 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-trash-o 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tree 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-trello 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-trophy 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-truck 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-try 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tty 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tumblr 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-tumblr-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-turkish-lira 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-twitch 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-twitter 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-twitter-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-umbrella 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-underline 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-undo 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-university 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-unlink 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-unlock 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-unlock-alt 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-unsorted 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-upload 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-usd 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-user 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-user-md 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-user-plus 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-user-secret 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-user-times 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-users 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-venus 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-venus-double 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-venus-mars 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-viacoin 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-video-camera 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-vimeo-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-vine 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-vk 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-volume-down 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-volume-off 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-volume-up 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-warning 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-wechat 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-weibo 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-weixin 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-whatsapp 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-wheelchair 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-wifi 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-windows 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-won 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-wordpress 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-wrench 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-xing 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-xing-square 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-yahoo 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-yelp 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-yen 
+                span.text-muted
+                  | (alias)
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-youtube 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-youtube-play 
+                span.muted
+                  |  
+              .col-md-4.col-sm-6.col-lg-3
+                i.fa.fa-fw
+                  | 
+                |  fa-youtube-square 
+                span.muted
+                  |  
+            .clearfix
+            hr
+            .alert.alert-info role="alert" style="margin-bottom:0"
+              i.fa.fa-fw.fa-info-circle
+              |  Icons by Dave Gandy (SIL OFL 1.1) : 
+              a href="http://fortawesome.github.io/Font-Awesome/"
+                | http://fortawesome.github.io/Font-Awesome/
+      footer.cm-footer
+        span.pull-left
+          | Connected as John Smith
+        span.pull-right
+          | © PAOMEDIA SARL
+    script src="assets/js/lib/jquery-2.1.3.min.js"
+    script src="assets/js/jquery.mousewheel.min.js"
+    script src="assets/js/jquery.cookie.min.js"
+    script src="assets/js/fastclick.min.js"
+    script src="assets/js/bootstrap.min.js"
+    script src="assets/js/clearmin.min.js"

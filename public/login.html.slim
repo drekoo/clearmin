@@ -1,0 +1,35 @@
+doctype html
+html lang="fr"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    link rel="stylesheet" type="text/css" href="assets/css/bootstrap-clearmin.min.css"
+    link rel="stylesheet" type="text/css" href="assets/css/roboto.css"
+    link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"
+    title
+      | CLEARMIN / LESS
+    style
+  body.cm-login
+    .text-center style="padding:90px 0 30px 0;background:#fff;border-bottom:1px solid #ddd"
+      img src="assets/img/logo-big.svg" width="300" height="45"
+    .col-sm-6.col-md-4.col-lg-3 style="margin:40px auto; float:none;"
+      form method="post" action="index.html"
+        .col-xs-12
+          .form-group
+            .input-group
+              .input-group-addon
+                i.fa.fa-fw.fa-user
+              input.form-control type="text" name="username" placeholder="Username"
+          .form-group
+            .input-group
+              .input-group-addon
+                i.fa.fa-fw.fa-lock
+              input.form-control type="password" name="password" placeholder="Password"
+        .col-xs-6
+          .checkbox
+            label
+              input type="checkbox"
+              |  Remember me
+        .col-xs-6
+          button.btn.btn-block.btn-primary type="submit"
+            | Sign in

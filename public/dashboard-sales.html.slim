@@ -1,0 +1,247 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    link rel="stylesheet" type="text/css" href="assets/css/bootstrap-clearmin.min.css"
+    link rel="stylesheet" type="text/css" href="assets/css/roboto.css"
+    link rel="stylesheet" type="text/css" href="assets/css/material-design.css"
+    link rel="stylesheet" type="text/css" href="assets/css/small-n-flat.css"
+    link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"
+    link rel="stylesheet" type="text/css" href="assets/css/c3.min.css"
+    title
+      | Clearmin template
+  body.cm-no-transition.cm-2-navbar
+    #cm-menu
+      nav.cm-navbar.cm-navbar-primary
+        .cm-flex
+          a.cm-logo href="index.html"
+        .btn.btn-primary.md-menu-white data-toggle="cm-menu"
+      #cm-menu-content
+        #cm-menu-items-wrapper
+          #cm-menu-scroller
+            ul.cm-menu-items
+              li
+                a.sf-house href="index.html"
+                  | Home
+              li.active
+                a.sf-dashboard href="dashboard-sales.html"
+                  | Dashboard
+              li
+                a.sf-brick href="components-text.html"
+                  | Components
+              li.cm-submenu
+                a.sf-window-layout
+                  | Navbar layouts 
+                  span.caret
+                ul
+                  li
+                    a href="layouts-breadcrumb1.html"
+                      | 1st nav breadcrumb
+                  li
+                    a href="layouts-breadcrumb2.html"
+                      | 2nd nav breadcrumb
+                  li
+                    a href="layouts-tabs.html"
+                      | 2nd nav tabs
+              li.cm-submenu
+                a.sf-cat
+                  | Icons 
+                  span.caret
+                ul
+                  li
+                    a href="ico-sf.html"
+                      | Small-n-flat
+                  li
+                    a href="ico-md.html"
+                      | Material Design
+                  li
+                    a href="ico-fa.html"
+                      | Font Awesome
+              li
+                a.sf-notepad href="notepad.html"
+                  | Text Editor
+              li
+                a.sf-lock-open href="login.html"
+                  | Login page
+    header#cm-header
+      nav.cm-navbar.cm-navbar-primary
+        .btn.btn-primary.md-menu-white.hidden-md.hidden-lg data-toggle="cm-menu"
+        .cm-flex
+          h1
+            | Dashboard
+          form#cm-search action="index.html" method="get"
+            input type="search" name="q" autocomplete="off" placeholder="Search..."
+        .pull-right
+          #cm-search-btn.btn.btn-primary.md-search-white data-toggle="cm-search"
+        .dropdown.pull-right
+          button.btn.btn-primary.md-notifications-white data-toggle="dropdown"
+            span.label.label-danger
+              | 23
+          .popover.cm-popover.bottom
+            .arrow
+            .popover-content
+              .list-group
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading.text-overflow
+                  i.fa.fa-fw.fa-envelope
+                  |  Nunc volutpat aliquet magna. 
+                p.list-group-item-text.text-overflow
+                  | Pellentesque tincidunt mollis scelerisque. Praesent vel blandit quam.
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-envelope
+                  |  Aliquam orci lectus 
+                p.list-group-item-text
+                  | Donec quis arcu non risus sagittis
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-warning
+                  |  Holy guacamole ! 
+                p.list-group-item-text
+                  | Best check yo self, you're not looking too good.
+              div style="padding:10px"
+                a.btn.btn-success.btn-block href="#"
+                  | Show me more...
+        .dropdown.pull-right
+          button.btn.btn-primary.md-account-circle-white data-toggle="dropdown"
+          ul.dropdown-menu
+            li.disabled.text-center
+              a style="cursor:default;"
+                strong
+                  | John Smith
+            li.divider
+            li
+              a href="#"
+                i.fa.fa-fw.fa-user
+                |  Profile
+            li
+              a href="#"
+                i.fa.fa-fw.fa-cog
+                |  Settings
+            li
+              a href="login.html"
+                i.fa.fa-fw.fa-sign-out
+                |  Sign out
+      nav.cm-navbar.cm-navbar-default.cm-navbar-slideup
+        .cm-flex
+          .nav-tabs-container
+            ul.nav.nav-tabs
+              li.active
+                a href="dashboard-sales.html"
+                  | Sales analytics
+              li
+                a href="dashboard-visitors.html"
+                  | Website Visitors
+              li
+                a href="dashboard-server_stats.html"
+                  | Server Stats
+        .pull-right style="border-left:1px solid #e5e5e5"
+          a.btn.btn-default.btn-light.md-file-download title="Download as PDF"
+        .pull-right
+          a.btn.btn-default.btn-light.md-settings title="Customize indicators"
+    #global
+      .container-fluid
+        .row
+          .col-sm-4
+            .panel.panel-default
+              .panel-heading
+                | C3 Gauge
+              .panel-body
+                #d1-c1 style="height:150px"
+          .col-sm-4
+            .panel.panel-default
+              .panel-heading
+                | C3 Gauge
+              .panel-body
+                #d1-c2 style="height:150px"
+          .col-sm-4
+            .panel.panel-default
+              .panel-heading
+                | C3 Gauge
+              .panel-body
+                #d1-c3 style="height:150px"
+        .panel.panel-default
+          .panel-heading
+            | C3 Bars
+          .panel-body
+            #d1-c5 style="height:320px"
+        .panel.panel-default
+          .panel-heading
+            | C3 Splines
+          .panel-body
+            #d1-c4 style="height:320px"
+        .alert.alert-info.shadowed role="alert"
+          i.fa.fa-fw.fa-info-circle
+          |  C3.js chart library by Masayuki Tanaka (MIT): 
+          a href="http://c3js.org/"
+            | http://c3js.org/
+        .panel.panel-default
+          .panel-heading
+            | Native progress bars
+          table.table.table-bordered
+            tr
+              td style="white-space:nowrap"
+                | Nemo enim ipsam
+              td
+                .progress
+                  .progress-bar.progress-bar-danger style="width:3%"
+              td
+                | 3%
+            tr
+              td style="white-space:nowrap"
+                | Neque porro quisquam
+              td style="width:100%"
+                .progress
+                  .progress-bar.progress-bar-warning style="width:9%"
+              td
+                | 9%
+            tr
+              td style="white-space:nowrap"
+                | Et quoniam inedia
+              td
+                .progress
+                  .progress-bar style="width:12%"
+              td
+                | 12%
+            tr
+              td style="white-space:nowrap"
+                | Catoni anteponas
+              td
+                .progress
+                  .progress-bar style="width:38%"
+              td
+                | 38%
+            tr
+              td style="white-space:nowrap"
+                | Haec dum oriens diu perferret
+              td style="width:100%"
+                .progress
+                  .progress-bar style="width:47%"
+              td
+                | 47%
+            tr
+              td style="white-space:nowrap"
+                | Nam libero tempore
+              td
+                .progress
+                  .progress-bar style="width:73%"
+              td
+                | 73%
+      footer.cm-footer
+        span.pull-left
+          | Connected as John Smith
+        span.pull-right
+          | © PAOMEDIA SARL
+    script src="assets/js/lib/jquery-2.1.3.min.js"
+    script src="assets/js/jquery.mousewheel.min.js"
+    script src="assets/js/jquery.cookie.min.js"
+    script src="assets/js/fastclick.min.js"
+    script src="assets/js/bootstrap.min.js"
+    script src="assets/js/clearmin.min.js"
+    script src="assets/js/lib/d3.min.js"
+    script src="assets/js/lib/c3.min.js"
+    script src="assets/js/demo/dashboard.js"

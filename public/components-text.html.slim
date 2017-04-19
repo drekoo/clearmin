@@ -1,0 +1,461 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    link rel="stylesheet" type="text/css" href="assets/css/bootstrap-clearmin.min.css"
+    link rel="stylesheet" type="text/css" href="assets/css/roboto.css"
+    link rel="stylesheet" type="text/css" href="assets/css/material-design.css"
+    link rel="stylesheet" type="text/css" href="assets/css/small-n-flat.css"
+    link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"
+    title
+      | Clearmin template
+  body.cm-no-transition.cm-2-navbar
+    #cm-menu
+      nav.cm-navbar.cm-navbar-primary
+        .cm-flex
+          a.cm-logo href="index.html"
+        .btn.btn-primary.md-menu-white data-toggle="cm-menu"
+      #cm-menu-content
+        #cm-menu-items-wrapper
+          #cm-menu-scroller
+            ul.cm-menu-items
+              li
+                a.sf-house href="index.html"
+                  | Home
+              li
+                a.sf-dashboard href="dashboard-sales.html"
+                  | Dashboard
+              li.active
+                a.sf-brick href="components-text.html"
+                  | Components
+              li.cm-submenu
+                a.sf-window-layout
+                  | Navbar layouts 
+                  span.caret
+                ul
+                  li
+                    a href="layouts-breadcrumb1.html"
+                      | 1st nav breadcrumb
+                  li
+                    a href="layouts-breadcrumb2.html"
+                      | 2nd nav breadcrumb
+                  li
+                    a href="layouts-tabs.html"
+                      | 2nd nav tabs
+              li.cm-submenu
+                a.sf-cat
+                  | Icons 
+                  span.caret
+                ul
+                  li
+                    a href="ico-sf.html"
+                      | Small-n-flat
+                  li
+                    a href="ico-md.html"
+                      | Material Design
+                  li
+                    a href="ico-fa.html"
+                      | Font Awesome
+              li
+                a.sf-notepad href="notepad.html"
+                  | Text Editor
+              li
+                a.sf-lock-open href="login.html"
+                  | Login page
+    header#cm-header
+      nav.cm-navbar.cm-navbar-primary
+        .btn.btn-primary.md-menu-white.hidden-md.hidden-lg data-toggle="cm-menu"
+        .cm-flex
+          h1
+            | Components
+          form#cm-search action="index.html" method="get"
+            input type="search" name="q" autocomplete="off" placeholder="Search..."
+        .pull-right
+          #cm-search-btn.btn.btn-primary.md-search-white data-toggle="cm-search"
+        .dropdown.pull-right
+          button.btn.btn-primary.md-notifications-white data-toggle="dropdown"
+            span.label.label-danger
+              | 23
+          .popover.cm-popover.bottom
+            .arrow
+            .popover-content
+              .list-group
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading.text-overflow
+                  i.fa.fa-fw.fa-envelope
+                  |  Nunc volutpat aliquet magna. 
+                p.list-group-item-text.text-overflow
+                  | Pellentesque tincidunt mollis scelerisque. Praesent vel blandit quam.
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-envelope
+                  |  Aliquam orci lectus 
+                p.list-group-item-text
+                  | Donec quis arcu non risus sagittis
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-warning
+                  |  Holy guacamole ! 
+                p.list-group-item-text
+                  | Best check yo self, you're not looking too good.
+              div style="padding:10px"
+                a.btn.btn-success.btn-block href="#"
+                  | Show me more...
+        .dropdown.pull-right
+          button.btn.btn-primary.md-account-circle-white data-toggle="dropdown"
+          ul.dropdown-menu
+            li.disabled.text-center
+              a style="cursor:default;"
+                strong
+                  | John Smith
+            li.divider
+            li
+              a href="#"
+                i.fa.fa-fw.fa-user
+                |  Profile
+            li
+              a href="#"
+                i.fa.fa-fw.fa-cog
+                |  Settings
+            li
+              a href="login.html"
+                i.fa.fa-fw.fa-sign-out
+                |  Sign out
+      nav.cm-navbar.cm-navbar-default.cm-navbar-slideup
+        .cm-flex
+          .nav-tabs-container
+            ul.nav.nav-tabs
+              li.active
+                a href="components-text.html"
+                  | Typography & Tables
+              li
+                a href="components-buttons.html"
+                  | Buttons & Forms
+              li
+                a href="components-interactive.html"
+                  | Interactive Components
+    #global
+      .container-fluid
+        .row.cm-fix-height
+          .col-sm-6
+            .panel.panel-default
+              .panel-heading
+                | Headings
+              .panel-body
+                h1 style="margin-top:0"
+                  |  h1. Bootstrap heading 
+                  small
+                    | Secondary text
+                h2
+                  |  h2. Bootstrap heading 
+                  small
+                    | Secondary text
+                h3
+                  |  h3. Bootstrap heading 
+                  small
+                    | Secondary text
+                h4
+                  |  h4. Bootstrap heading 
+                  small
+                    | Secondary text
+                h5
+                  |  h5. Bootstrap heading 
+                  small
+                    | Secondary text
+                h6
+                  |  h6. Bootstrap heading 
+                  small
+                    | Secondary text
+          .col-sm-6
+            .panel.panel-default
+              .panel-heading
+                | paragraphs
+              .panel-body
+                p
+                  |  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. 
+                p
+                  |  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. 
+                p
+                  |  Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+                p
+                  |  Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+        .row.cm-fix-height
+          .col-sm-4
+            .panel.panel-default
+              .panel-heading
+                | Adresses
+              .panel-body
+                address
+                  strong
+                    | Twitter, Inc.
+                  br
+                  |  795 Folsom Ave, Suite 600 
+                  br
+                  |  San Francisco, CA 94107 
+                  br
+                  abbr title="Phone"
+                    | P:
+                  |  (123) 456-7890 
+                address style="margin:0"
+                  strong
+                    | Full Name
+                  br
+                  a href="mailto:#"
+                    | first.last@example.com
+          .col-sm-4
+            .panel.panel-default
+              .panel-heading
+                | Blockquotes
+              .panel-body
+                blockquote style="margin:0"
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                  footer
+                    | Someone famous in 
+                    cite title="Source Title"
+                      | Source Title
+          .col-sm-4
+            .panel.panel-default
+              .panel-heading
+                | Lists
+              .panel-body
+                ul style="margin:0"
+                  li
+                    | Facilisis in pretium
+                  li
+                    |  Nulla volutpat 
+                    ul
+                      li
+                        | Purus sodales
+                      li
+                        | Vestibulum
+                      li
+                        | Ac tristique
+                  li
+                    | Aenean sit amet
+                  li
+                    | Eget porttitor lorem
+        .row
+          .col-md-6
+            .panel.panel-default
+              .panel-heading
+                | Tables
+              .panel-body
+                table.table.table-bordered.table-hover
+                  caption
+                    | with 
+                    code
+                      | .table-bordered
+                    |  and 
+                    code
+                      | .table-hover
+                  thead
+                    tr
+                      th
+                        | #
+                      th
+                        | First Name
+                      th
+                        | Last Name
+                      th
+                        | Username
+                  tbody
+                    tr
+                      th scope="row"
+                        | 1
+                      td
+                        | Mark
+                      td
+                        | Otto
+                      td
+                        | @mdo
+                    tr
+                      th scope="row"
+                        | 2
+                      td
+                        | Jacob
+                      td
+                        | Thornton
+                      td
+                        | @fat
+                    tr
+                      th scope="row"
+                        | 3
+                      td
+                        | Larry
+                      td
+                        | the Bird
+                      td
+                        | @twitter
+                table.table.table-hover style="margin-bottom:0"
+                  caption
+                    | with 
+                    code
+                      | .table-hover
+                    |  only
+                  thead
+                    tr
+                      th
+                        | #
+                      th
+                        | First Name
+                      th
+                        | Last Name
+                      th
+                        | Username
+                  tbody
+                    tr
+                      th scope="row"
+                        | 1
+                      td
+                        | Mark
+                      td
+                        | Otto
+                      td
+                        | @mdo
+                    tr
+                      th scope="row"
+                        | 2
+                      td
+                        | Jacob
+                      td
+                        | Thornton
+                      td
+                        | @fat
+                    tr
+                      th scope="row"
+                        | 3
+                      td
+                        | Larry
+                      td
+                        | the Bird
+                      td
+                        | @twitter
+          .col-md-6
+            .panel.panel-default
+              .panel-heading
+                | Tables with contextual classes
+              .panel-body
+                p style="margin-bottom:0"
+                  | The table is outside the 
+                  code
+                    | .panel-body
+              table.table
+                thead
+                  tr
+                    th
+                      | #
+                    th
+                      code
+                        | tr
+                      |  classes
+                    th
+                      | Column heading
+                    th
+                      | Column heading
+                tbody
+                  tr.active
+                    th scope="row"
+                      | 1
+                    td
+                      | active
+                    td
+                      | Column content
+                    td
+                      | Column content
+                  tr
+                    th scope="row"
+                      | 2
+                    td
+                      | Column content
+                    td
+                      | Column content
+                    td
+                      | Column content
+                  tr.success
+                    th scope="row"
+                      | 3
+                    td
+                      | success
+                    td
+                      | Column content
+                    td
+                      | Column content
+                  tr
+                    th scope="row"
+                      | 4
+                    td
+                      | Column content
+                    td
+                      | Column content
+                    td
+                      | Column content
+                  tr.info
+                    th scope="row"
+                      | 5
+                    td
+                      | info
+                    td
+                      | Column content
+                    td
+                      | Column content
+                  tr
+                    th scope="row"
+                      | 6
+                    td
+                      | Column content
+                    td
+                      | Column content
+                    td
+                      | Column content
+                  tr.warning
+                    th scope="row"
+                      | 7
+                    td
+                      | warning
+                    td
+                      | Column content
+                    td
+                      | Column content
+                  tr
+                    th scope="row"
+                      | 8
+                    td
+                      | Column content
+                    td
+                      | Column content
+                    td
+                      | Column content
+                  tr.danger
+                    th scope="row"
+                      | 9
+                    td
+                      | danger
+                    td
+                      | Column content
+                    td
+                      | Column content
+        .alert.alert-info.alert-dismissible.fade.in.shadowed role="alert"
+          button.close type="button" data-dismiss="alert" aria-label="Close"
+            span aria-hidden="true"
+              | ×
+          i.fa.fa-fw.fa-info-circle
+          |  Clearmin uses 
+          a href="http://www.google.com/fonts#ChoosePlace:select/Collection:Roboto"
+            | Roboto font
+          |  by Google Inc. (Apache 2.0) 
+      footer.cm-footer
+        span.pull-left
+          | Connected as John Smith
+        span.pull-right
+          | © PAOMEDIA SARL
+    script src="assets/js/lib/jquery-2.1.3.min.js"
+    script src="assets/js/jquery.mousewheel.min.js"
+    script src="assets/js/jquery.cookie.min.js"
+    script src="assets/js/fastclick.min.js"
+    script src="assets/js/bootstrap.min.js"
+    script src="assets/js/clearmin.min.js"

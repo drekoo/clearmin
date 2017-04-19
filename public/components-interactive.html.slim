@@ -1,0 +1,437 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    link rel="stylesheet" type="text/css" href="assets/css/bootstrap-clearmin.min.css"
+    link rel="stylesheet" type="text/css" href="assets/css/roboto.css"
+    link rel="stylesheet" type="text/css" href="assets/css/material-design.css"
+    link rel="stylesheet" type="text/css" href="assets/css/small-n-flat.css"
+    link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"
+    title
+      | Clearmin template
+  body.cm-no-transition.cm-2-navbar
+    #cm-menu
+      nav.cm-navbar.cm-navbar-primary
+        .cm-flex
+          a.cm-logo href="index.html"
+        .btn.btn-primary.md-menu-white data-toggle="cm-menu"
+      #cm-menu-content
+        #cm-menu-items-wrapper
+          #cm-menu-scroller
+            ul.cm-menu-items
+              li
+                a.sf-house href="index.html"
+                  | Home
+              li
+                a.sf-dashboard href="dashboard-sales.html"
+                  | Dashboard
+              li.active
+                a.sf-brick href="components-text.html"
+                  | Components
+              li.cm-submenu
+                a.sf-window-layout
+                  | Navbar layouts 
+                  span.caret
+                ul
+                  li
+                    a href="layouts-breadcrumb1.html"
+                      | 1st nav breadcrumb
+                  li
+                    a href="layouts-breadcrumb2.html"
+                      | 2nd nav breadcrumb
+                  li
+                    a href="layouts-tabs.html"
+                      | 2nd nav tabs
+              li.cm-submenu
+                a.sf-cat
+                  | Icons 
+                  span.caret
+                ul
+                  li
+                    a href="ico-sf.html"
+                      | Small-n-flat
+                  li
+                    a href="ico-md.html"
+                      | Material Design
+                  li
+                    a href="ico-fa.html"
+                      | Font Awesome
+              li
+                a.sf-notepad href="notepad.html"
+                  | Text Editor
+              li
+                a.sf-lock-open href="login.html"
+                  | Login page
+    header#cm-header
+      nav.cm-navbar.cm-navbar-primary
+        .btn.btn-primary.md-menu-white.hidden-md.hidden-lg data-toggle="cm-menu"
+        .cm-flex
+          h1
+            | Components
+          form#cm-search action="index.html" method="get"
+            input type="search" name="q" autocomplete="off" placeholder="Search..."
+        .pull-right
+          #cm-search-btn.btn.btn-primary.md-search-white data-toggle="cm-search"
+        .dropdown.pull-right
+          button.btn.btn-primary.md-notifications-white data-toggle="dropdown"
+            span.label.label-danger
+              | 23
+          .popover.cm-popover.bottom
+            .arrow
+            .popover-content
+              .list-group
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading.text-overflow
+                  i.fa.fa-fw.fa-envelope
+                  |  Nunc volutpat aliquet magna. 
+                p.list-group-item-text.text-overflow
+                  | Pellentesque tincidunt mollis scelerisque. Praesent vel blandit quam.
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-envelope
+                  |  Aliquam orci lectus 
+                p.list-group-item-text
+                  | Donec quis arcu non risus sagittis
+                a.list-group-item href="#"
+
+                h4.list-group-item-heading
+                  i.fa.fa-fw.fa-warning
+                  |  Holy guacamole ! 
+                p.list-group-item-text
+                  | Best check yo self, you're not looking too good.
+              div style="padding:10px"
+                a.btn.btn-success.btn-block href="#"
+                  | Show me more...
+        .dropdown.pull-right
+          button.btn.btn-primary.md-account-circle-white data-toggle="dropdown"
+          ul.dropdown-menu
+            li.disabled.text-center
+              a style="cursor:default;"
+                strong
+                  | John Smith
+            li.divider
+            li
+              a href="#"
+                i.fa.fa-fw.fa-user
+                |  Profile
+            li
+              a href="#"
+                i.fa.fa-fw.fa-cog
+                |  Settings
+            li
+              a href="login.html"
+                i.fa.fa-fw.fa-sign-out
+                |  Sign out
+      nav.cm-navbar.cm-navbar-default.cm-navbar-slideup
+        .cm-flex
+          .nav-tabs-container
+            ul.nav.nav-tabs
+              li
+                a href="components-text.html"
+                  | Typography & Tables
+              li
+                a href="components-buttons.html"
+                  | Buttons & Forms
+              li.active
+                a href="components-interactive.html"
+                  | Interactive Components
+    #global
+      style
+        | .demo hr{margin:30px 0}
+      .container-fluid
+        .panel.panel-default.demo
+          .panel-body
+            h4 style="margin-top:0"
+              | Modals
+            p
+              button.btn.btn-primary.btn-lg type="button" data-toggle="modal" data-target="#myModal"
+                |  Launch demo modal 
+            hr
+            h4
+              | Dropdowns buttons
+            .bs-example data-example-id="single-button-dropdown"
+              .btn-group
+                button.btn.btn-default.dropdown-toggle type="button" data-toggle="dropdown" aria-expanded="false"
+                  | Default 
+                  span.caret
+                ul.dropdown-menu role="menu"
+                  li
+                    a href="#"
+                      | Action
+                  li
+                    a href="#"
+                      | Another action
+                  li
+                    a href="#"
+                      | Something else here
+                  li.divider
+                  li
+                    a href="#"
+                      | Separated link
+              .btn-group
+                button.btn.btn-primary.dropdown-toggle type="button" data-toggle="dropdown" aria-expanded="false"
+                  | Primary 
+                  span.caret
+                ul.dropdown-menu role="menu"
+                  li
+                    a href="#"
+                      | Action
+                  li
+                    a href="#"
+                      | Another action
+                  li
+                    a href="#"
+                      | Something else here
+                  li.divider
+                  li
+                    a href="#"
+                      | Separated link
+              .btn-group
+                button.btn.btn-success.dropdown-toggle type="button" data-toggle="dropdown" aria-expanded="false"
+                  | Success 
+                  span.caret
+                ul.dropdown-menu role="menu"
+                  li
+                    a href="#"
+                      | Action
+                  li
+                    a href="#"
+                      | Another action
+                  li
+                    a href="#"
+                      | Something else here
+                  li.divider
+                  li
+                    a href="#"
+                      | Separated link
+              .btn-group
+                button.btn.btn-info.dropdown-toggle type="button" data-toggle="dropdown" aria-expanded="false"
+                  | Info 
+                  span.caret
+                ul.dropdown-menu role="menu"
+                  li
+                    a href="#"
+                      | Action
+                  li
+                    a href="#"
+                      | Another action
+                  li
+                    a href="#"
+                      | Something else here
+                  li.divider
+                  li
+                    a href="#"
+                      | Separated link
+              .btn-group
+                button.btn.btn-warning.dropdown-toggle type="button" data-toggle="dropdown" aria-expanded="false"
+                  | Warning 
+                  span.caret
+                ul.dropdown-menu role="menu"
+                  li
+                    a href="#"
+                      | Action
+                  li
+                    a href="#"
+                      | Another action
+                  li
+                    a href="#"
+                      | Something else here
+                  li.divider
+                  li
+                    a href="#"
+                      | Separated link
+              .btn-group
+                button.btn.btn-danger.dropdown-toggle type="button" data-toggle="dropdown" aria-expanded="false"
+                  | Danger 
+                  span.caret
+                ul.dropdown-menu role="menu"
+                  li
+                    a href="#"
+                      | Action
+                  li
+                    a href="#"
+                      | Another action
+                  li
+                    a href="#"
+                      | Something else here
+                  li.divider
+                  li
+                    a href="#"
+                      | Separated link
+            hr
+            h4
+              | Dropdowns within pills
+            ul.nav.nav-pills role="tablist"
+              li role="presentation"
+                a href="#"
+                  | Regular link
+              li.dropdown role="presentation"
+                a#drop4.dropdown-toggle href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false"
+                  |  Dropdown 
+                  span.caret
+                ul#menu1.dropdown-menu role="menu" aria-labelledby="drop4"
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Action
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Another action
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Something else here
+                  li.divider role="presentation"
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Separated link
+              li.dropdown role="presentation"
+                a#drop5.dropdown-toggle href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false"
+                  |  Dropdown 
+                  span.caret
+                ul#menu2.dropdown-menu role="menu" aria-labelledby="drop5"
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Action
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Another action
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Something else here
+                  li.divider role="presentation"
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Separated link
+              li.dropdown role="presentation"
+                a#drop6.dropdown-toggle href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false"
+                  |  Dropdown 
+                  span.caret
+                ul#menu3.dropdown-menu role="menu" aria-labelledby="drop6"
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Action
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Another action
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Something else here
+                  li.divider role="presentation"
+                  li role="presentation"
+                    a role="menuitem" tabindex="-1" href="https://twitter.com/fat"
+                      | Separated link
+            hr
+            h4
+              | Toggable Tabs
+            ul#myTab.nav.nav-tabs role="tablist"
+              li.active role="presentation"
+                a#home-tab href="#home" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"
+                  | Home
+              li role="presentation"
+                a#profile-tab href="#profile" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="false"
+                  | Profile
+              li.dropdown role="presentation"
+                a#myTabDrop1.dropdown-toggle href="#" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false"
+                  | Dropdown 
+                  span.caret
+                ul#myTabDrop1-contents.dropdown-menu role="menu" aria-labelledby="myTabDrop1"
+                  li
+                    a#dropdown1-tab href="#dropdown1" tabindex="-1" role="tab" data-toggle="tab" aria-controls="dropdown1"
+                      | @fat
+                  li
+                    a#dropdown2-tab href="#dropdown2" tabindex="-1" role="tab" data-toggle="tab" aria-controls="dropdown2"
+                      | @mdo
+            br
+            #myTabContent.tab-content
+              #home.tab-pane.fade.active.in role="tabpanel" aria-labelledby="home-tab"
+                p
+                  | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+              #profile.tab-pane.fade role="tabpanel" aria-labelledby="profile-tab"
+                p
+                  | Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+              #dropdown1.tab-pane.fade role="tabpanel" aria-labelledby="dropdown1-tab"
+                p
+                  | Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+              #dropdown2.tab-pane.fade role="tabpanel" aria-labelledby="dropdown2-tab"
+                p
+                  | Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.
+            hr
+            h4
+              | Tooltips
+            .row
+              .col-sm-3.text-center
+                .btn.btn-default.tooltip-test data-toggle="tooltip" data-placement="left" title="Tooltip on left"
+                  | Tooltip on left
+              .col-sm-3.text-center
+                .btn.btn-default.tooltip-test data-toggle="tooltip" data-placement="top" title="Tooltip on top"
+                  | Tooltip on top
+              .col-sm-3.text-center
+                .btn.btn-default.tooltip-test data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"
+                  | Tooltip on bottom
+              .col-sm-3.text-center
+                .btn.btn-default.tooltip-test data-toggle="tooltip" data-placement="right" title="Tooltip on right"
+                  | Tooltip on right
+            hr
+            h4
+              | Popovers
+            button.btn.btn-lg.btn-danger type="button" data-toggle="popover" data-trigger="focus" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"
+              | Click to toggle popover
+      #myModal.modal.fade tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close type="button" data-dismiss="modal" aria-label="Close"
+                span aria-hidden="true"
+                  | ×
+              h4#myModalLabel.modal-title
+                |  Modal title 
+                a.anchorjs-link href="#myModalLabel"
+                  span.anchorjs-icon
+            .modal-body
+              h4#text-in-a-modal
+                |  Text in a modal 
+                a.anchorjs-link href="#text-in-a-modal"
+                  span.anchorjs-icon
+              p
+                | Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+              hr
+              h4#popover-in-a-modal
+                |  Popover in a modal 
+                a.anchorjs-link href="#popover-in-a-modal"
+                  span.anchorjs-icon
+              p
+                | This 
+                a.btn.btn-default.popover-test href="#" role="button" title="" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A Title"
+                  | button
+                |  should trigger a popover on click.
+              hr
+              h4#tooltips-in-a-modal
+                |  Tooltips in a modal 
+                a.anchorjs-link href="#tooltips-in-a-modal"
+                  span.anchorjs-icon
+              p
+                a.tooltip-test href="#" title="" data-original-title="Tooltip"
+                  | This link
+                |  and 
+                a.tooltip-test href="#" title="" data-original-title="Tooltip"
+                  | that link
+                |  should have tooltips on hover.
+            .modal-footer
+              button.btn.btn-default type="button" data-dismiss="modal"
+                | Close
+              button.btn.btn-primary type="button"
+                | Save changes
+      footer.cm-footer
+        span.pull-left
+          | Connected as John Smith
+        span.pull-right
+          | © PAOMEDIA SARL
+    script src="assets/js/lib/jquery-2.1.3.min.js"
+    script src="assets/js/jquery.mousewheel.min.js"
+    script src="assets/js/jquery.cookie.min.js"
+    script src="assets/js/fastclick.min.js"
+    script src="assets/js/bootstrap.min.js"
+    script src="assets/js/clearmin.min.js"
+    script src="assets/js/demo/popovers-tooltips.js"
